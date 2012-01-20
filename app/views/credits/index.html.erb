@@ -1,0 +1,53 @@
+<h1>Listing Credits</h1>
+
+<table>
+  <tr>
+    <th>MerchantID</th>
+    <th>MerchantTranscationID</th>
+    <th>ReportgGroup</th>
+    <th>OrderID</th>
+    <th>Amount</th>
+    <th>CardNumber</th>
+    <th>CardMonth</th>
+    <th>CardYear</th>
+    <th>Cvv</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Address1</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+    <th>Zip</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @credits.each do |credit| %>
+  <tr>
+    <td><%= credit.merchantid %></td>
+    <td><%= credit.merchanttxnid %></td>
+    <td><%= credit.reportgroup %></td>
+    <td><%= credit.orderid %></td>
+    <td><%= credit.amount %></td>
+    <td><%= credit.cardnumber %></td>
+    <td><%= credit.cardmonth %></td>
+    <td><%= credit.cardyear %></td>
+    <td><%= credit.cvv %></td>
+    <td><%= credit.firstname %></td>
+    <td><%= credit.lastname %></td>
+    <td><%= credit.address1 %></td>
+    <td><%= credit.city %></td>
+    <td><%= credit.state %></td>
+    <td><%= credit.country %></td>
+    <td><%= credit.zip %></td>
+    <td><%= credit.email %></td>
+    <td><%= link_to 'Edit', edit_credit_path(credit) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'back', root_path %>

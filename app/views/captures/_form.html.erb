@@ -1,0 +1,38 @@
+<%= form_for(@capture) do |f| %>
+  <% if @capture.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@capture.errors.count, "error") %> prohibited this capture from being saved:</h2>
+
+      <ul>
+      <% @capture.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <h4>Capture Information</h4>
+  <div class="field">
+    <%= f.label :MerchantID %><br />
+    <%= f.text_field :merchantid %>
+  </div>
+  <div class="field">
+    <%= f.label :merchanttxnid %><br />
+    <%= f.text_field :merchanttxnid %>
+  </div>
+  <div class="field">
+    <%= f.label :OrderID %><br />
+    <%= f.text_field :orderid %>
+  </div>
+  <div class="field">
+    <%= f.label :litletxnid %><br />
+    <%= f.text_field :litletxnid %>
+  </div>
+  <div class="field">
+    <%= f.label :Amount %><br />
+    <%= f.text_field :amount %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

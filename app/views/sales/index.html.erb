@@ -1,0 +1,55 @@
+<h1>Listing Sales</h1>
+
+<table>
+  <tr>
+    <th>MerchantID</th>
+    <th>MerchantTxnID</th>
+    <th>ReportGroup</th>
+    <th>OrderID</th>
+    <th>OrderSource</th>
+    <th>Amount</th>
+    <th>CardNumber</th>
+    <th>CardMonth</th>
+    <th>Cardyear</th>
+    <th>Cvv</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Address1</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+    <th>Zip</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sales.each do |sale| %>
+  <tr>
+    <td><%= sale.merchantid %></td>
+    <td><%= sale.merchanttxnid %></td>
+    <td><%= sale.reportgroup %></td>
+    <td><%= sale.orderid %></td>
+    <td><%= sale.ordersource %></td>
+    <td><%= sale.amount %></td>
+    <td><%= sale.cardnumber %></td>
+    <td><%= sale.cardmonth %></td>
+    <td><%= sale.cardyear %></td>
+    <td><%= sale.cvv %></td>
+    <td><%= sale.firstname %></td>
+    <td><%= sale.lastname %></td>
+    <td><%= sale.address1 %></td>
+    <td><%= sale.city %></td>
+    <td><%= sale.state %></td>
+    <td><%= sale.country %></td>
+    <td><%= sale.zip %></td>
+    <td><%= sale.email %></td>
+    <td><%= link_to 'Edit', edit_sale_path(sale) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'back', root_path %>

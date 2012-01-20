@@ -1,0 +1,52 @@
+<h1>Listing Authorizations</h1>
+
+<table>
+  <tr>
+    <th>MerchantID</th>
+    <th>MerchantTranscationID</th>
+    <th>ReportGroup</th>
+    <th>OrderID</th>
+    <th>OrderSource</th>
+    <th>Amount</th>
+    <th>Name</th>
+    <th>CardNumber</th>
+    <th>CardMonth</th>
+    <th>CardYear</th>
+    <th>Cvv</th>
+    <th>Address1</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+    <th>Zip</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orders.each do |order| %>
+  <tr>
+    <td><%= order.merchantid %></td>
+    <td><%= order.merchanttxnid %></td>
+    <td><%= order.reportgroup %></td>
+    <td><%= order.orderid %></td>
+    <td><%= order.ordersource %></td>
+    <td><%= order.amount %></td>
+    <td><%= order.name %></td>
+    <td><%= order.cardnumber %></td>
+    <td><%= order.cardmonth %></td>
+    <td><%= order.cardyear %></td>
+    <td><%= order.cvv %></td>
+    <td><%= order.address1 %></td>
+    <td><%= order.city %></td>
+    <td><%= order.state %></td>
+    <td><%= order.country %></td>
+    <td><%= order.zip %></td>
+    <td><%= order.email %></td>
+    <td><%= link_to 'Edit', edit_order_path(order) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%= link_to 'back', root_path%>

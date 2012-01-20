@@ -1,0 +1,27 @@
+<h1>Listing voids</h1>
+
+<table>
+  <tr>
+    <th>MerhcantID</th>
+    <th>MerchantTranscationID</th>
+    <th>Reportgroup</th>
+    <th>LitleTranscationID(From Credit, Capture or Sale)</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @voids.each do |void| %>
+  <tr>
+    <td><%= void.merchantid %></td>
+    <td><%= void.merchanttxnid %></td>
+    <td><%= void.reportgroup %></td>
+    <td><%= void.litletxnid %></td>
+    <td><%= link_to 'Edit', edit_void_path(void) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'back', root_path %>

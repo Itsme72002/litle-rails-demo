@@ -1,0 +1,31 @@
+<%= form_for(@void) do |f| %>
+  <% if @void.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@void.errors.count, "error") %> prohibited this void from being saved:</h2>
+
+      <ul>
+      <% @void.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :merchantid %><br />
+    <%= f.text_field :merchantid %>
+  </div>  <div class="field">
+    <%= f.label :merchanttxnid %><br />
+    <%= f.text_field :merchanttxnid %>
+  </div>
+  <div class="field">
+    <%= f.label :reportgroup %><br />
+    <%= f.text_field :reportgroup %>
+  </div>
+  <div class="field">
+    <%= f.label :litletxnid %><br />
+    <%= f.text_field :litletxnid %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
