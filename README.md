@@ -1,14 +1,26 @@
-In this Demo Rails (v3.1.1) App, we test 6 Litle_Online payment methods.
-Authorization
-AuthReversal
-Capture
-Credit
-Sale
-Void
-All the payment methods have explanation with it.
-NOTICE: In Capture, we set the reportgroup, ordersource as defult value with "Planets", "ecommerce".
-	In Credit, we set the ordersource as defult value with "ecmmerce"
-	All this defult value was set cause easy to test.
-	You can check the full input using Sale or Auth.
-NOTICE: All the Capture data should came from Authorzaition by using Authorization litleTxnId
+Litle and Co demo application using Ruby on Rails
+=================================================
+
+Prerequisites
+-------------
+This application utilizes the Litle Certification system.  In order to run tests you need to have access enabled to our systems for your source IP addresses.
+
+The certification environment is reached at: https://cert.litle.com/vap/communicator/online
+
+Description
+-----------
+In this Demo Rails (v3.1.1) App, we describe and enable test 6 Litle payment transactions.
+	-Authorization
+	-AuthReversal
+	-Capture
+	-Credit
+	-Sale
+	-Void
+
+All the payment transactions are acompanied by an explanation in the Web app.
+
+NOTICE: In the Capture example we set the fields for reportgroup and ordersource with the defult values of "Planets", "ecommerce".
+	In Credit, we set the ordersource as defult value with "ecommmerce"
+
+NOTICE: To submit a Capture transction you must reference the LitleTxnId from a prior Authorization.
 
