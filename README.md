@@ -19,8 +19,8 @@ In this Demo Rails (v3.1.1) App, we describe and enable test 6 Litle payment tra
 
 All the payment transactions are acompanied by an explanation in the Web app.
 
-NOTICE: In the Capture example we set the fields for reportgroup and ordersource with the defult values of "Planets", "ecommerce".
-	In Credit, we set the ordersource as defult value with "ecommmerce"
+NOTICE: In the Capture example we set the fields for reportgroup and ordersource with the default values of "Planets", "ecommerce".
+	In Credit, we set the ordersource as default value with "ecommmerce"
 
-NOTICE: To submit a Capture transction you must reference the LitleTxnId from a prior Authorization.
+NOTICE: To submit a Capture transaction you must reference the LitleTxnId from an prior Authorization.
 
