@@ -12,42 +12,49 @@ class CreditsController < ApplicationController
 
   # GET /credits/1
   # GET /credits/1.json
-  def show
-    @credit = Credit.find(params[:id])
-    options = { 'merchantId' => @credit.merchantid,
-		'id' => @credit.merchanttxnid,
-		'reportGroup' => @credit.reportgroup,
-		'orderId' => @credit.orderid,
+def show
+    @credits = Credit.find(params[:id])
+    gateway = ActiveMerchant::Billing::LitleGateway.new(
+            :login => 'PHXMLTEST',
+            :password => 'certpass')
+    
+    amount =  @credits.amount
+  
+
+    options = { 
 		'orderSource' => 'ecommerce',
-		'amount' => @credit.amount,
-		'card' => {
-			   'number' => (@credit.cardnumber),
-			   'month' => @credit.cardmonth,
-			   'year' => @credit.cardyear,
-                           'verification_value' => @credit.cvv
-			  },
-		'billToAddress' => {'fisrtName' => @credit.firstname,
-			 	    'lastName' => @credit.lastname,
-				    'name' => [@credit.firstname, @credit.lastname].compact.join(','),
-				    'address1' => @credit.address1,
-				    'city' => @credit.city,
-				    'state' => @credit.state,
-				    'country' => ('US' or @credit.country),
-				    'zip' => @credit.zip,
-				    'email' => @credit.email}	
+		'billToAddress' => {'fisrtName' => @credits.firstname,
+			 	    'lastName' => @credits.lastname,
+				    'name' => [@credits.firstname, @credits.lastname].compact.join(','),
+				    'address1' => @credits.address1,
+				    'city' => @credits.city,
+				    'state' => @credits.state,
+				    'country' => ('US' or @credits.country),
+				    'zip' => @credits.zip,
+				    'email' => @credits.email}	
 		}
-    response = ActiveMerchant::Billing::LitleGateway.credit(options)
-    card = options['card']
-    @number = card['number']
-    @message = response.message
-    if @message == 'Valid Format'
-	@post = "Will refund $#{sprintf("%.2f", options['amount'].to_f / 100)} to the credit card XXXX-XXXX-XXXX-#{sprintf("%.4i", @number)[-4..-1]}"
-        @litletxnid = response.creditResponse.litleTxnId
-        @litlepostdate = response.creditResponse.postDate
+    credit_card = ActiveMerchant::Billing::CreditCard.new(
+                :first_name         => @credits.firstname,
+                :last_name          => @credits.lastname,
+                :number             => @credits.cardnumber,
+                :month              => @credits.cardmonth,
+                :year               => @credits.cardyear,
+                :verification_value => @credits.cvv)
+
+  
+if credit_card.valid?
+    response = gateway.credit(amount,credit_card,options)
+
+    if response.success?
+        @post =  "Successfully charged $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}"   
     else
-     	render :action => 'error'
+   	@post =  "Unsucessful Transaction"   
     end
-  end
+else
+    render :action => 'error'  
+end
+
+ end
 
   # GET /credits/new
   # GET /credits/new.json

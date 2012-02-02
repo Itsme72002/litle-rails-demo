@@ -13,7 +13,6 @@ class CapturesController < ApplicationController
   # GET /captures/1
   # GET /captures/1.json
   def show
-   ActiveMerchant::Billing::Base.mode = :test
     gateway = ActiveMerchant::Billing::LitleGateway.new(
 	   :login => 'PHXMLTEST',
             :password => 'certpass')
@@ -21,7 +20,7 @@ class CapturesController < ApplicationController
 		'id' => @capture.merchanttxnid,
 		'reportGroup' => 'Plantes',
 		'orderId' => @capture.orderid,
-		'orderSource' => 'ecommerce',
+		'orderSource' => 'ecommerce',s
 		'litleTxnId' => @capture.litletxnid,
 		}
     amount = @capture.amount

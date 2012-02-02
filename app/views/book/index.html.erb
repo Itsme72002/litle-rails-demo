@@ -1,6 +1,6 @@
 <div id="content">
 <header>
-  <h4>Here are the six examples to using Litle_Online payments!!!</h4>
+  <h4>Here are six examples using Litle Online payments!!!</h4>
 </header>
 <section>
 <h4>Authorization</h4>
@@ -17,11 +17,11 @@
 <p>The Capture transaction transfers funds from the customer to the merchant. The Capture references the associated Authorization by means of the litleTxnId element returned in the Authorization response.</p>
 <%= link_to 'New Capture', new_capture_path %>
 </section>
-<h4>Credit</h4>
-<p>The Credit transaction enables you to refund money to a customer, even if the original transaction occurred outside of the Litle & Co. system.</p>
+<h4>Credit/Refund</h4>
+<p>The Credit/Refund transaction enables you to refund money to a customer, even if the original transaction occurred outside of the Litle & Co. system.</p>
 <%= link_to 'New Credit', new_credit_path %>
-<h4>Sale</h4>
-<p>The Sale transaction enables you to both authorize fund availability and deposit those funds by means of a single transaction. The Sale transaction is also known as a conditional deposit, because the deposit takes place only if the authorization succeeds. If the authorization is declined, the deposit will not be processed.</p>
+<h4>Purchase</h4>
+<p>The Purchase transaction enables you to both authorize fund availability and deposit those funds by means of a single transaction. The Sale transaction is also known as a conditional deposit, because the deposit takes place only if the authorization succeeds. If the authorization is declined, the deposit will not be processed.</p>
 <%= link_to 'New Sale', new_sale_path %>
 <h4>Void</h4>
 <p>You use a Void transaction to cancel a transaction that occurred during the same business day. You can void Capture, Credit, and Sale transactions.</p>

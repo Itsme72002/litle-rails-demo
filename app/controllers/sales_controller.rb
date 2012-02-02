@@ -46,7 +46,7 @@ if credit_card.valid?
     response = gateway.purchase(amount,credit_card,options)
 
     if response.success?
-        @post =  "Successfully charged $#{sprintf("%.2f", amount.to_i / 100)} to the credit card #{credit_card.display_number}"   
+        @post =  "Successfully charged $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}"   
     else
    	@post =  "Unsucessful Transaction"   
     end
