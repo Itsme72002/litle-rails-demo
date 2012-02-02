@@ -15,10 +15,10 @@ gem 'therubyracer'
 gem 'active_utils'
 
 # LitleOnline
-#gem 'LitleOnline', '0.0.3'
+gem 'LitleOnline'
 
 # Litle_ActiveMerchant
-#gem 'Litle_activemerchant'
+gem 'activemerchant'
 
 # Gems used only for assets and not required
 # in production environments by default.

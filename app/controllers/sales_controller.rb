@@ -14,19 +14,15 @@ class SalesController < ApplicationController
   # GET /sales/1.json
   def show
     @sale = Sale.find(params[:id])
+    gateway = ActiveMerchant::Billing::LitleGateway.new(
+            :login => 'PHXMLTEST',
+            :password => 'certpass')
+    
+    amount =  @sale.amount
+  
 
-    options = { 'merchantId' => @sale.merchantid,
-		'id' => @sale.merchanttxnid,
-		'reportGroup' => @sale.reportgroup,
-		'orderId' => @sale.orderid,
-		'orderSource' => @sale.ordersource,
-		'amount' => @sale.amount,
-		'card' => {
-			   'number' => (@sale.cardnumber),
-			   'month' => @sale.cardmonth,
-			   'year' => @sale.cardyear,
-                           'verification_value' => @sale.cvv
-			  },
+    options = { 
+		'orderSource' => 'ecommerce',
 		'billToAddress' => {'fisrtName' => @sale.firstname,
 			 	    'lastName' => @sale.lastname,
 				    'name' => [@sale.firstname, @sale.lastname].compact.join(','),
@@ -37,18 +33,29 @@ class SalesController < ApplicationController
 				    'zip' => @sale.zip,
 				    'email' => @sale.email}	
 		}
-    response = ActiveMerchant::Billing::LitleGateway.sale(options)
-    card = options['card']
-    @number = card['number']
-    @message = response.message
-    if @message == 'Valid Format'
-	@post = "Will charged $#{sprintf("%.2f", options['amount'].to_f / 100)} to the credit card XXXX-XXXX-XXXX-#{sprintf("%.4i", @number)[-4..-1]}"
-        @litletxnid = response.saleResponse.litleTxnId
-        @litlepostdate = response.saleResponse.postDate
+    credit_card = ActiveMerchant::Billing::CreditCard.new(
+                :first_name         => @sale.firstname,
+                :last_name          => @sale.lastname,
+                :number             => @sale.cardnumber,
+                :month              => @sale.cardmonth,
+                :year               => @sale.cardyear,
+                :verification_value => @sale.cvv)
+
+  
+if credit_card.valid?
+    response = gateway.purchase(amount,credit_card,options)
+
+    if response.success?
+        @post =  "Successfully charged $#{sprintf("%.2f", amount.to_i / 100)} to the credit card #{credit_card.display_number}"   
     else
-     	render :action => 'error'
+   	@post =  "Unsucessful Transaction"   
     end
-  end
+else
+    render :action => 'error'  
+end
+ end
+
+
 
   # GET /sales/new
   # GET /sales/new.json
