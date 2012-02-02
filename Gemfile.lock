@@ -1,19 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    LitleOnline (0.0.3)
-      activesupport
-      i18n
-      xml-object
-      xml-simple
-    Litle_activemerchant (0.0.3)
-      LitleOnline
-      active_utils (>= 1.0.1)
-      activesupport (>= 2.3.11)
-      braintree (>= 2.0.0)
-      builder (>= 2.0.0)
-      i18n
-      money
     actionmailer (3.1.3)
       actionpack (= 3.1.3)
       mail (~> 2.3.0)
@@ -47,8 +34,6 @@ GEM
       multi_json (~> 1.0)
     ansi (1.4.1)
     arel (2.2.1)
-    braintree (2.13.1)
-      builder (>= 2.0.0)
     builder (3.0.0)
     coffee-rails (3.1.1)
       coffee-script (>= 2.2.0)
@@ -72,9 +57,6 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.17.2)
-    money (4.0.1)
-      i18n (~> 0.4)
-      json
     multi_json (1.0.4)
     polyglot (0.3.3)
     rack (1.3.5)
@@ -128,15 +110,11 @@ GEM
     uglifier (1.1.0)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
-    xml-object (0.9.93)
-    xml-simple (1.1.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  LitleOnline (= 0.0.3)
-  Litle_activemerchant
   active_utils
   coffee-rails (~> 3.1.1)
   execjs
