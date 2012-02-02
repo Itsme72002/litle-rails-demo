@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  merchantid: MyString
+  amount: MyString
+  name: MyString
+  cardnumber: MyString
+  cardmonth: MyString
+  cardyear: MyString
+
+two:
+  merchantid: MyString
+  amount: MyString
+  name: MyString
+  cardnumber: MyString
+  cardmonth: MyString
+  cardyear: MyString

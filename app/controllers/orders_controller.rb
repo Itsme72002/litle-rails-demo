@@ -29,7 +29,7 @@ class OrdersController < ApplicationController
 				    'zip' => @order.zip,
 				    'email' => @order.email}}
  
-# Pass the options hash through ActiveMerchant's LitleGateway to Litle Ruby SDK
+# Pass the options hash through ActiveMerchant's LitleGateway to Litle Ruby API
     response = ActiveMerchant::Billing::LitleGateway.authorization(options)
     @message= response.message
     if @message == 'Valid Format'
