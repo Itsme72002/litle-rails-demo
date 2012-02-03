@@ -8354,3 +8354,292 @@ ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypatt
   
 
 Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/authreversals/new" for 10.1.17.238 at 2012-02-03 09:24:11 -0500
+  Processing by AuthreversalsController#new as HTML
+Rendered authreversals/_form.html.erb (11.8ms)
+Rendered authreversals/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 09:24:11 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 09:24:11 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 09:24:11 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/authreversals" for 10.1.17.238 at 2012-02-03 09:24:17 -0500
+  Processing by AuthreversalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "authreversal"=>{"merchantid"=>"1", "merchanttxnid"=>"1", "reportgroup"=>"1", "litletxnid"=>"1", "amount"=>"1"}, "commit"=>"Create Authreversal"}
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "authreversals" ("amount", "created_at", "litletxnid", "merchantid", "merchanttxnid", "reportgroup", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["amount", "1"], ["created_at", Fri, 03 Feb 2012 14:24:17 UTC +00:00], ["litletxnid", "1"], ["merchantid", "1"], ["merchanttxnid", "1"], ["reportgroup", "1"], ["updated_at", Fri, 03 Feb 2012 14:24:17 UTC +00:00]]
+Redirected to http://l-rganmukh-ws490:3000/authreversals/2
+Completed 302 Found in 11ms
+
+
+Started GET "/authreversals/2" for 10.1.17.238 at 2012-02-03 09:24:17 -0500
+  Processing by AuthreversalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAuthreversal Load (0.1ms)[0m  [1mSELECT "authreversals".* FROM "authreversals" WHERE "authreversals"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `authReversal' for ActiveMerchant::Billing::LitleGateway:Class):
+  app/controllers/authreversals_controller.rb:24:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.4ms)
+
+
+Started POST "/authreversals" for 10.1.17.238 at 2012-02-03 09:30:55 -0500
+  Processing by AuthreversalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "authreversal"=>{"merchantid"=>"", "merchanttxnid"=>"", "reportgroup"=>"", "litletxnid"=>"12333333", "amount"=>"123"}, "commit"=>"Create Authreversal"}
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "authreversals" ("amount", "created_at", "litletxnid", "merchantid", "merchanttxnid", "reportgroup", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["amount", "123"], ["created_at", Fri, 03 Feb 2012 14:30:55 UTC +00:00], ["litletxnid", "12333333"], ["merchantid", ""], ["merchanttxnid", ""], ["reportgroup", ""], ["updated_at", Fri, 03 Feb 2012 14:30:55 UTC +00:00]]
+Redirected to http://l-rganmukh-ws490:3000/authreversals/3
+Completed 302 Found in 52ms
+
+
+Started GET "/authreversals/3" for 10.1.17.238 at 2012-02-03 09:30:55 -0500
+  Processing by AuthreversalsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAuthreversal Load (0.1ms)[0m  [1mSELECT "authreversals".* FROM "authreversals" WHERE "authreversals"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `firstname' for #<Authreversal:0x000000223caad8>):
+  app/controllers/authreversals_controller.rb:28:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/authreversals/3" for 10.1.17.238 at 2012-02-03 09:31:05 -0500
+  Processing by AuthreversalsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAuthreversal Load (0.2ms)[0m  SELECT "authreversals".* FROM "authreversals" WHERE "authreversals"."id" = ? LIMIT 1  [["id", "3"]]
+Completed 500 Internal Server Error in 10ms
+
+NoMethodError (undefined method `cardnumber' for #<Authreversal:0x00000020f52b28>):
+  app/controllers/authreversals_controller.rb:30:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started GET "/authreversals/3" for 10.1.17.238 at 2012-02-03 09:31:06 -0500
+  Processing by AuthreversalsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAuthreversal Load (0.1ms)[0m  [1mSELECT "authreversals".* FROM "authreversals" WHERE "authreversals"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `cardnumber' for #<Authreversal:0x00000022417798>):
+  app/controllers/authreversals_controller.rb:30:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/authreversals/new" for 10.1.17.238 at 2012-02-03 09:31:26 -0500
+  Processing by AuthreversalsController#new as HTML
+Rendered authreversals/_form.html.erb (8.9ms)
+Rendered authreversals/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 09:31:26 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 09:31:26 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 09:31:26 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/authreversals/new" for 10.1.17.238 at 2012-02-03 09:34:28 -0500
+
+ActionController::RoutingError (uninitialized constant AuthreversalsController):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-03 09:35:46 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 09:35:46 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 09:35:46 -0500
+Served asset /Litle.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 09:35:46 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-03 09:36:02 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 50ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 09:36:02 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 09:36:02 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 09:36:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/orders/new" for 10.1.17.238 at 2012-02-03 09:36:16 -0500
+  Processing by OrdersController#new as HTML
+Rendered orders/_form.html.erb (19.3ms)
+Rendered orders/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 09:36:16 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 09:36:16 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 09:36:16 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/orders" for 10.1.17.238 at 2012-02-03 09:36:28 -0500
+  Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "order"=>{"amount"=>"1234", "name"=>"", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"4100000000000001", "cardmonth"=>"4", "cardyear"=>"2013", "cvv"=>"123"}, "commit"=>"Auth"}
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "orders" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "merchantid", "merchanttxnid", "name", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", ""], ["amount", "1234"], ["cardmonth", "4"], ["cardnumber", "4100000000000001"], ["cardyear", "2013"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 14:36:28 UTC +00:00], ["cvv", "123"], ["email", ""], ["merchantid", nil], ["merchanttxnid", nil], ["name", ""], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 14:36:28 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/orders/18
+Completed 302 Found in 21ms
+
+
+Started GET "/orders/18" for 10.1.17.238 at 2012-02-03 09:36:28 -0500
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "18"]]
+Rendered orders/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 6.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 09:36:28 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 09:36:28 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 09:36:28 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/orders" for 10.1.17.238 at 2012-02-03 09:36:46 -0500
+  Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "order"=>{"amount"=>"1234", "name"=>"", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"4100000000000001", "cardmonth"=>"4", "cardyear"=>"2013", "cvv"=>"123"}, "commit"=>"Auth"}
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "orders" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "merchantid", "merchanttxnid", "name", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", ""], ["amount", "1234"], ["cardmonth", "4"], ["cardnumber", "4100000000000001"], ["cardyear", "2013"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 14:36:46 UTC +00:00], ["cvv", "123"], ["email", ""], ["merchantid", nil], ["merchanttxnid", nil], ["name", ""], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 14:36:46 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/orders/19
+Completed 302 Found in 64ms
+
+
+Started GET "/orders/19" for 10.1.17.238 at 2012-02-03 09:36:46 -0500
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "19"]]
+Rendered orders/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 6.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 09:36:46 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 09:36:46 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 09:36:47 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/orders" for 10.1.17.238 at 2012-02-03 09:38:55 -0500
+  Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "order"=>{"amount"=>"1234", "name"=>"123213", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"4100000000000001", "cardmonth"=>"2", "cardyear"=>"2013", "cvv"=>"123"}, "commit"=>"Auth"}
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "orders" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "merchantid", "merchanttxnid", "name", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", ""], ["amount", "1234"], ["cardmonth", "2"], ["cardnumber", "4100000000000001"], ["cardyear", "2013"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 14:38:55 UTC +00:00], ["cvv", "123"], ["email", ""], ["merchantid", nil], ["merchanttxnid", nil], ["name", "123213"], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 14:38:55 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/orders/20
+Completed 302 Found in 20ms
+
+
+Started GET "/orders/20" for 10.1.17.238 at 2012-02-03 09:38:55 -0500
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "20"]]
+Rendered orders/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 622ms (Views: 6.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 09:38:56 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 09:38:56 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 09:38:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
