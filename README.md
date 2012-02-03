@@ -3,7 +3,7 @@ Litle and Co demo application using Ruby on Rails
 
 Prerequisites
 -------------
-This application requires Active Merchant to be configured.
+This application requires the Litle version of the Active Merchant gem to be installed and configured to talk to a Litle environment.
 
 Description
 -----------
