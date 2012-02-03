@@ -7,18 +7,16 @@ This application requires Active Merchant to be configured.
 
 Description
 -----------
-In this Demo Rails (v3.1.1) App, we describe and enable test 6 Litle payment transactions.
-	-Authorization
-	-AuthReversal
-	-Capture
-	-Credit
-	-Sale
-	-Void
+In this Demo Rails (v3.1.1) App, The UI for this application allows realtime generation of 6 Litle payment transactions.
+	
+ - Authorization
+ - AuthReversal
+ - Capture
+ - Credit
+ - Sale
+ - Void
 
-All the payment transactions are acompanied by an explanation in the Web app.
+All of the payment transactions above are accompanied by brief overview explaining there usage.  The explanations are located directly in the demo applications UI.
 
-NOTICE: In the Capture example we set the fields for reportgroup and ordersource with the default values of "Planets" and "ecommerce".
-	In Credit, we set the ordersource with the default value of "ecommmerce"
-
-NOTICE: To submit a Capture transaction you must reference the LitleTxnId from a prior Authorization.
+NOTICE: To submit a Capture, Void, Credit, and AuthReversal transaction you must reference the LitleTxnId from a prior transaction.
 
