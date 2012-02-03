@@ -8643,3 +8643,1635 @@ ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypatt
   
 
 Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/sales/81" for 10.1.17.238 at 2012-02-03 12:20:03 -0500
+  Processing by SalesController#show as HTML
+  Parameters: {"id"=>"81"}
+  [1m[36mSale Load (0.3ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "81"]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Sale with id=81):
+  app/controllers/sales_controller.rb:16:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.6ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:20:06 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:20:06 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/sales/new" for 10.1.17.238 at 2012-02-03 12:20:15 -0500
+  Processing by SalesController#new as HTML
+Rendered sales/_form.html.erb (57.6ms)
+Rendered sales/new.html.erb within layouts/application (69.3ms)
+Completed 200 OK in 78ms (Views: 77.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:20:15 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:20:15 -0500
+Served asset /Litle.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:20:15 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/sales" for 10.1.17.238 at 2012-02-03 12:21:01 -0500
+  Processing by SalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "sale"=>{"amount"=>"123", "firstname"=>"r", "lastname"=>"g", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"4100000000000001", "cardmonth"=>"1", "cardyear"=>"2014", "cvv"=>"123"}, "commit"=>"Create Sale"}
+  [1m[35mSQL (19.5ms)[0m  INSERT INTO "sales" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", ""], ["amount", "123"], ["cardmonth", "1"], ["cardnumber", "4100000000000001"], ["cardyear", "2014"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 17:21:01 UTC +00:00], ["cvv", "123"], ["email", ""], ["firstname", "r"], ["lastname", "g"], ["litletxnid", nil], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 17:21:01 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/sales/74
+Completed 302 Found in 78ms
+
+
+Started GET "/sales/74" for 10.1.17.238 at 2012-02-03 12:21:01 -0500
+  Processing by SalesController#show as HTML
+  Parameters: {"id"=>"74"}
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "74"]]
+Rendered sales/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1301ms (Views: 7.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:21:03 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:21:03 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:21:03 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/sales" for 10.1.17.238 at 2012-02-03 12:21:11 -0500
+  Processing by SalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "sale"=>{"amount"=>"123", "firstname"=>"r", "lastname"=>"g", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"41000", "cardmonth"=>"1", "cardyear"=>"2014", "cvv"=>"123"}, "commit"=>"Create Sale"}
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", ""], ["amount", "123"], ["cardmonth", "1"], ["cardnumber", "41000"], ["cardyear", "2014"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 17:21:11 UTC +00:00], ["cvv", "123"], ["email", ""], ["firstname", "r"], ["lastname", "g"], ["litletxnid", nil], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 17:21:11 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/sales/75
+Completed 302 Found in 24ms
+
+
+Started GET "/sales/75" for 10.1.17.238 at 2012-02-03 12:21:11 -0500
+  Processing by SalesController#show as HTML
+  Parameters: {"id"=>"75"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "75"]]
+Rendered sales/error.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:21:11 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:21:11 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:21:11 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/orders/new" for 10.1.17.238 at 2012-02-03 12:22:18 -0500
+  Processing by OrdersController#new as HTML
+Rendered orders/_form.html.erb (20.6ms)
+Rendered orders/new.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:22:19 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:22:19 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:22:19 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/orders" for 10.1.17.238 at 2012-02-03 12:22:29 -0500
+  Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "order"=>{"amount"=>"1234", "name"=>"123213", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"4100000000000001", "cardmonth"=>"1", "cardyear"=>"2013", "cvv"=>"123"}, "commit"=>"Auth"}
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "orders" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "merchantid", "merchanttxnid", "name", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", ""], ["amount", "1234"], ["cardmonth", "1"], ["cardnumber", "4100000000000001"], ["cardyear", "2013"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 17:22:29 UTC +00:00], ["cvv", "123"], ["email", ""], ["merchantid", nil], ["merchanttxnid", nil], ["name", "123213"], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 17:22:29 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/orders/21
+Completed 302 Found in 20ms
+
+
+Started GET "/orders/21" for 10.1.17.238 at 2012-02-03 12:22:30 -0500
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "21"]]
+Rendered orders/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 926ms (Views: 7.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:22:31 -0500
+Served asset /Litle.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:22:31 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:22:31 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/orders" for 10.1.17.238 at 2012-02-03 12:22:38 -0500
+  Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "order"=>{"amount"=>"1234", "name"=>"123213", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"4100000000000", "cardmonth"=>"1", "cardyear"=>"2013", "cvv"=>""}, "commit"=>"Auth"}
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "orders" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "merchantid", "merchanttxnid", "name", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", ""], ["amount", "1234"], ["cardmonth", "1"], ["cardnumber", "4100000000000"], ["cardyear", "2013"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 17:22:38 UTC +00:00], ["cvv", ""], ["email", ""], ["merchantid", nil], ["merchanttxnid", nil], ["name", "123213"], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 17:22:38 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/orders/22
+Completed 302 Found in 20ms
+
+
+Started GET "/orders/22" for 10.1.17.238 at 2012-02-03 12:22:38 -0500
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "22"]]
+Rendered orders/error.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 65ms (Views: 7.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:22:39 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:22:39 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:22:39 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/orders" for 10.1.17.238 at 2012-02-03 12:44:32 -0500
+  Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "order"=>{"amount"=>"1234", "name"=>"123213", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"41000000000001", "cardmonth"=>"1", "cardyear"=>"2013", "cvv"=>"123"}, "commit"=>"Auth"}
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "orders" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "merchantid", "merchanttxnid", "name", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", ""], ["amount", "1234"], ["cardmonth", "1"], ["cardnumber", "41000000000001"], ["cardyear", "2013"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 17:44:32 UTC +00:00], ["cvv", "123"], ["email", ""], ["merchantid", nil], ["merchanttxnid", nil], ["name", "123213"], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 17:44:32 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/orders/23
+Completed 302 Found in 62ms
+
+
+Started GET "/orders/23" for 10.1.17.238 at 2012-02-03 12:44:32 -0500
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "23"]]
+Rendered orders/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 6.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:44:32 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:44:32 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:44:32 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/orders" for 10.1.17.238 at 2012-02-03 12:44:46 -0500
+  Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "order"=>{"amount"=>"1234", "name"=>"123213", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"41000000000001", "cardmonth"=>"1", "cardyear"=>"2013", "cvv"=>"123"}, "commit"=>"Auth"}
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "orders" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "merchantid", "merchanttxnid", "name", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", ""], ["amount", "1234"], ["cardmonth", "1"], ["cardnumber", "41000000000001"], ["cardyear", "2013"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 17:44:47 UTC +00:00], ["cvv", "123"], ["email", ""], ["merchantid", nil], ["merchanttxnid", nil], ["name", "123213"], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 17:44:47 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/orders/24
+Completed 302 Found in 21ms
+
+
+Started GET "/orders/24" for 10.1.17.238 at 2012-02-03 12:44:47 -0500
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "24"]]
+Rendered orders/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 6.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:44:47 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:44:47 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:44:47 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/orders" for 10.1.17.238 at 2012-02-03 12:45:00 -0500
+  Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "order"=>{"amount"=>"1234", "name"=>"123213", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"4100000000000001", "cardmonth"=>"1", "cardyear"=>"2013", "cvv"=>"123"}, "commit"=>"Auth"}
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "orders" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "merchantid", "merchanttxnid", "name", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", ""], ["amount", "1234"], ["cardmonth", "1"], ["cardnumber", "4100000000000001"], ["cardyear", "2013"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 17:45:00 UTC +00:00], ["cvv", "123"], ["email", ""], ["merchantid", nil], ["merchanttxnid", nil], ["name", "123213"], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 17:45:00 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/orders/25
+Completed 302 Found in 60ms
+
+
+Started GET "/orders/25" for 10.1.17.238 at 2012-02-03 12:45:00 -0500
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "25"]]
+Rendered orders/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 653ms (Views: 6.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:45:01 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:45:01 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:45:01 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/captures/new" for 10.1.17.238 at 2012-02-03 12:45:29 -0500
+  Processing by CapturesController#new as HTML
+Rendered captures/_form.html.erb (17.2ms)
+Rendered captures/new.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:45:29 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:45:29 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:45:29 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/captures" for 10.1.17.238 at 2012-02-03 12:45:35 -0500
+  Processing by CapturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "capture"=>{"merchantid"=>"", "merchanttxnid"=>"", "orderid"=>"", "litletxnid"=>"21321321321321321321", "amount"=>"213"}, "commit"=>"Create Capture"}
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "captures" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", nil], ["amount", "213"], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Fri, 03 Feb 2012 17:45:35 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "21321321321321321321"], ["merchantid", ""], ["merchanttxnid", ""], ["orderid", ""], ["state", nil], ["updated_at", Fri, 03 Feb 2012 17:45:35 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/captures/2
+Completed 302 Found in 20ms
+
+
+Started GET "/captures/2" for 10.1.17.238 at 2012-02-03 12:45:35 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `litletxnid' for nil:NilClass):
+  app/controllers/captures_controller.rb:19:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started POST "/captures" for 10.1.17.238 at 2012-02-03 12:46:08 -0500
+
+SyntaxError (/usr/local/litle-home/rganmukh/git/litle-rails-demo/app/controllers/captures_controller.rb:20: syntax error, unexpected ','):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started POST "/captures" for 10.1.17.238 at 2012-02-03 12:46:20 -0500
+  Processing by CapturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "capture"=>{"merchantid"=>"", "merchanttxnid"=>"", "orderid"=>"", "litletxnid"=>"21321321321321321321", "amount"=>"213"}, "commit"=>"Create Capture"}
+  [1m[36mSQL (43.3ms)[0m  [1mINSERT INTO "captures" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address1", nil], ["amount", "213"], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Fri, 03 Feb 2012 17:46:20 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "21321321321321321321"], ["merchantid", ""], ["merchanttxnid", ""], ["orderid", ""], ["state", nil], ["updated_at", Fri, 03 Feb 2012 17:46:20 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/captures/3
+Completed 302 Found in 62ms
+
+
+Started GET "/captures/3" for 10.1.17.238 at 2012-02-03 12:46:20 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCapture Load (0.1ms)[0m  SELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1  [["id", "3"]]
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `amount' for nil:NilClass):
+  app/controllers/captures_controller.rb:19:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.4ms)
+
+
+Started GET "/captures/3" for 10.1.17.238 at 2012-02-03 12:46:33 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCapture Load (0.1ms)[0m  [1mSELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 94ms
+
+NameError (captureResponse):
+  app/controllers/captures_controller.rb:21:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/captures/3" for 10.1.17.238 at 2012-02-03 12:46:35 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCapture Load (0.1ms)[0m  SELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1  [["id", "3"]]
+Completed 500 Internal Server Error in 93ms
+
+NameError (captureResponse):
+  app/controllers/captures_controller.rb:21:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/captures/3" for 10.1.17.238 at 2012-02-03 12:47:10 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCapture Load (0.1ms)[0m  [1mSELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 94ms
+
+NameError (captureResponse):
+  app/controllers/captures_controller.rb:21:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/captures/3" for 10.1.17.238 at 2012-02-03 12:47:11 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCapture Load (0.1ms)[0m  SELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1  [["id", "3"]]
+Completed 500 Internal Server Error in 97ms
+
+NameError (captureResponse):
+  app/controllers/captures_controller.rb:21:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started POST "/captures" for 10.1.17.238 at 2012-02-03 12:47:51 -0500
+  Processing by CapturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "capture"=>{"merchantid"=>"", "merchanttxnid"=>"", "orderid"=>"", "litletxnid"=>"123456789123456789", "amount"=>"213"}, "commit"=>"Create Capture"}
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "captures" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address1", nil], ["amount", "213"], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Fri, 03 Feb 2012 17:47:51 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "123456789123456789"], ["merchantid", ""], ["merchanttxnid", ""], ["orderid", ""], ["state", nil], ["updated_at", Fri, 03 Feb 2012 17:47:51 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/captures/4
+Completed 302 Found in 72ms
+
+
+Started GET "/captures/4" for 10.1.17.238 at 2012-02-03 12:47:51 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCapture Load (0.1ms)[0m  SELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1  [["id", "4"]]
+Rendered captures/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 124ms (Views: 8.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:47:51 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:47:51 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:47:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/captures/4" for 10.1.17.238 at 2012-02-03 12:49:01 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCapture Load (0.2ms)[0m  [1mSELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Rendered captures/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 124ms (Views: 6.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:49:02 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:49:02 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:49:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/captures" for 10.1.17.238 at 2012-02-03 12:49:07 -0500
+  Processing by CapturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "capture"=>{"merchantid"=>"", "merchanttxnid"=>"", "orderid"=>"", "litletxnid"=>"123456779123456789", "amount"=>"213"}, "commit"=>"Create Capture"}
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "captures" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", nil], ["amount", "213"], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Fri, 03 Feb 2012 17:49:07 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "123456779123456789"], ["merchantid", ""], ["merchanttxnid", ""], ["orderid", ""], ["state", nil], ["updated_at", Fri, 03 Feb 2012 17:49:07 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/captures/5
+Completed 302 Found in 22ms
+
+
+Started GET "/captures/5" for 10.1.17.238 at 2012-02-03 12:49:08 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCapture Load (0.1ms)[0m  [1mSELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1[0m  [["id", "5"]]
+Rendered captures/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 80ms (Views: 6.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:49:08 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:49:08 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:49:08 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-03 12:50:54 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-03 12:50:54 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:50:54 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:50:54 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:50:54 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/captures/new" for 10.1.17.238 at 2012-02-03 12:50:59 -0500
+  Processing by CapturesController#new as HTML
+Rendered captures/_form.html.erb (17.0ms)
+Rendered captures/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:50:59 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:50:59 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:50:59 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/captures" for 10.1.17.238 at 2012-02-03 12:51:08 -0500
+  Processing by CapturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "capture"=>{"merchantid"=>"", "merchanttxnid"=>"", "orderid"=>"", "litletxnid"=>"12434754747474747477474747", "amount"=>"124"}, "commit"=>"Create Capture"}
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "captures" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", nil], ["amount", "124"], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Fri, 03 Feb 2012 17:51:08 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "12434754747474747477474747"], ["merchantid", ""], ["merchanttxnid", ""], ["orderid", ""], ["state", nil], ["updated_at", Fri, 03 Feb 2012 17:51:08 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/captures/6
+Completed 302 Found in 21ms
+
+
+Started GET "/captures/6" for 10.1.17.238 at 2012-02-03 12:51:08 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCapture Load (0.1ms)[0m  [1mSELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1[0m  [["id", "6"]]
+Completed 500 Internal Server Error in 94ms
+
+NameError (captureResponse):
+  app/controllers/captures_controller.rb:19:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/voids/new" for 10.1.17.238 at 2012-02-03 12:51:33 -0500
+  Processing by VoidsController#new as HTML
+Rendered voids/_form.html.erb (8.7ms)
+Rendered voids/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:51:33 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:51:33 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:51:33 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/voids" for 10.1.17.238 at 2012-02-03 12:52:39 -0500
+  Processing by VoidsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "void"=>{"merchantid"=>"", "merchanttxnid"=>"", "reportgroup"=>"", "litletxnid"=>"123456789123456789"}, "commit"=>"Create Void"}
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "voids" ("created_at", "litletxnid", "merchantid", "merchanttxnid", "reportgroup", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 03 Feb 2012 17:52:39 UTC +00:00], ["litletxnid", "123456789123456789"], ["merchantid", ""], ["merchanttxnid", ""], ["reportgroup", ""], ["updated_at", Fri, 03 Feb 2012 17:52:39 UTC +00:00]]
+Redirected to http://l-rganmukh-ws490:3000/voids/1
+Completed 302 Found in 12ms
+
+
+Started GET "/voids/1" for 10.1.17.238 at 2012-02-03 12:52:39 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoid Load (0.1ms)[0m  [1mSELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `void' for ActiveMerchant::Billing::LitleGateway:Class):
+  app/controllers/voids_controller.rb:20:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started GET "/voids/1" for 10.1.17.238 at 2012-02-03 12:53:36 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoid Load (0.1ms)[0m  SELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered voids/error.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:53:36 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:53:36 -0500
+Served asset /Litle.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:53:36 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/voids/1" for 10.1.17.238 at 2012-02-03 12:54:06 -0500
+
+SyntaxError (/usr/local/litle-home/rganmukh/git/litle-rails-demo/app/controllers/voids_controller.rb:87: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/voids/1" for 10.1.17.238 at 2012-02-03 12:54:15 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoid Load (0.1ms)[0m  [1mSELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered voids/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 119ms (Views: 7.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:54:16 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:54:16 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:54:16 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/voids/1" for 10.1.17.238 at 2012-02-03 12:55:31 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoid Load (0.1ms)[0m  SELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `litleTxnId' for #<Void:0x00000015482280>):
+  app/controllers/voids_controller.rb:20:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/voids/1" for 10.1.17.238 at 2012-02-03 12:55:40 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoid Load (0.1ms)[0m  [1mSELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered voids/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 65ms (Views: 6.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:55:40 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:55:40 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:55:40 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/voids/1" for 10.1.17.238 at 2012-02-03 12:55:58 -0500
+
+SyntaxError (/usr/local/litle-home/rganmukh/git/litle-rails-demo/app/controllers/voids_controller.rb:55: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+        format.html { render action: "new" }
+                                         ^
+/usr/local/litle-home/rganmukh/git/litle-rails-demo/app/controllers/voids_controller.rb:71: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+        format.html { render action: "edit" }
+                                          ^
+/usr/local/litle-home/rganmukh/git/litle-rails-demo/app/controllers/voids_controller.rb:71: unterminated string meets end of file
+/usr/local/litle-home/rganmukh/git/litle-rails-demo/app/controllers/voids_controller.rb:71: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/voids/1" for 10.1.17.238 at 2012-02-03 12:56:37 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoid Load (0.1ms)[0m  SELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 172ms
+
+NameError (undefined local variable or method `litleTxnId' for #<VoidsController:0x000000143ca7a8>):
+  app/controllers/voids_controller.rb:25:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started GET "/voids/1" for 10.1.17.238 at 2012-02-03 12:56:51 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoid Load (0.1ms)[0m  [1mSELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 128ms
+
+NameError (undefined local variable or method `litletxnid' for #<VoidsController:0x0000001572b428>):
+  app/controllers/voids_controller.rb:25:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.7ms)
+
+
+Started GET "/voids/1" for 10.1.17.238 at 2012-02-03 12:56:54 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoid Load (0.2ms)[0m  SELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 131ms
+
+NameError (undefined local variable or method `litletxnid' for #<VoidsController:0x00000015a731f8>):
+  app/controllers/voids_controller.rb:25:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/voids/1" for 10.1.17.238 at 2012-02-03 12:57:04 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVoid Load (0.1ms)[0m  [1mSELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered voids/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 111ms (Views: 7.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:57:04 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:57:04 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:57:04 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/voids/1" for 10.1.17.238 at 2012-02-03 12:57:10 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVoid Load (0.1ms)[0m  SELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered voids/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 111ms (Views: 6.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:57:10 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:57:10 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:57:10 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/voids/new" for 10.1.17.238 at 2012-02-03 12:57:47 -0500
+  Processing by VoidsController#new as HTML
+Rendered voids/_form.html.erb (7.8ms)
+Rendered voids/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 12:57:48 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 12:57:48 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 12:57:48 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/voids" for 10.1.17.238 at 2012-02-03 12:58:03 -0500
+  Processing by VoidsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "void"=>{"litletxnid"=>"123213213213213213213213"}, "commit"=>"Create Void"}
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "voids" ("created_at", "litletxnid", "merchantid", "merchanttxnid", "reportgroup", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 03 Feb 2012 17:58:03 UTC +00:00], ["litletxnid", "123213213213213213213213"], ["merchantid", nil], ["merchanttxnid", nil], ["reportgroup", nil], ["updated_at", Fri, 03 Feb 2012 17:58:03 UTC +00:00]]
+Redirected to http://l-rganmukh-ws490:3000/voids/2
+Completed 302 Found in 59ms
+
+
+Started GET "/voids/2" for 10.1.17.238 at 2012-02-03 12:58:04 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mVoid Load (0.1ms)[0m  SELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1  [["id", "2"]]
+Completed 500 Internal Server Error in 210ms
+
+NameError (voidResponse):
+  app/controllers/voids_controller.rb:20:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started GET "/voids/2" for 10.1.17.238 at 2012-02-03 13:02:41 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mVoid Load (0.1ms)[0m  [1mSELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Rendered voids/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 63ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:02:41 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:02:41 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:02:41 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/voids" for 10.1.17.238 at 2012-02-03 13:03:25 -0500
+  Processing by VoidsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "void"=>{"litletxnid"=>"123213213213213213213214"}, "commit"=>"Create Void"}
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "voids" ("created_at", "litletxnid", "merchantid", "merchanttxnid", "reportgroup", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 03 Feb 2012 18:03:25 UTC +00:00], ["litletxnid", "123213213213213213213214"], ["merchantid", nil], ["merchanttxnid", nil], ["reportgroup", nil], ["updated_at", Fri, 03 Feb 2012 18:03:25 UTC +00:00]]
+Redirected to http://l-rganmukh-ws490:3000/voids/3
+Completed 302 Found in 25ms
+
+
+Started GET "/voids/3" for 10.1.17.238 at 2012-02-03 13:03:25 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVoid Load (0.1ms)[0m  [1mSELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Rendered voids/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 62ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:03:25 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:03:25 -0500
+Served asset /Litle.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:03:25 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/voids" for 10.1.17.238 at 2012-02-03 13:03:45 -0500
+  Processing by VoidsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "void"=>{"litletxnid"=>"123213213213213213213214"}, "commit"=>"Create Void"}
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "voids" ("created_at", "litletxnid", "merchantid", "merchanttxnid", "reportgroup", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 03 Feb 2012 18:03:46 UTC +00:00], ["litletxnid", "123213213213213213213214"], ["merchantid", nil], ["merchanttxnid", nil], ["reportgroup", nil], ["updated_at", Fri, 03 Feb 2012 18:03:46 UTC +00:00]]
+Redirected to http://l-rganmukh-ws490:3000/voids/4
+Completed 302 Found in 54ms
+
+
+Started GET "/voids/4" for 10.1.17.238 at 2012-02-03 13:03:46 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mVoid Load (0.1ms)[0m  [1mSELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Rendered voids/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 62ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:03:46 -0500
+Served asset /Litle.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:03:46 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:03:46 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-03 13:04:04 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-03 13:04:05 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:04:05 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:04:05 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:04:05 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/voids/new" for 10.1.17.238 at 2012-02-03 13:04:09 -0500
+  Processing by VoidsController#new as HTML
+Rendered voids/_form.html.erb (7.8ms)
+Rendered voids/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:04:09 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:04:09 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:04:09 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/voids" for 10.1.17.238 at 2012-02-03 13:04:13 -0500
+  Processing by VoidsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "void"=>{"litletxnid"=>"213123213213213213213213213"}, "commit"=>"Create Void"}
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "voids" ("created_at", "litletxnid", "merchantid", "merchanttxnid", "reportgroup", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 03 Feb 2012 18:04:13 UTC +00:00], ["litletxnid", "213123213213213213213213213"], ["merchantid", nil], ["merchanttxnid", nil], ["reportgroup", nil], ["updated_at", Fri, 03 Feb 2012 18:04:13 UTC +00:00]]
+Redirected to http://l-rganmukh-ws490:3000/voids/5
+Completed 302 Found in 14ms
+
+
+Started GET "/voids/5" for 10.1.17.238 at 2012-02-03 13:04:13 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mVoid Load (0.1ms)[0m  [1mSELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1[0m  [["id", "5"]]
+Rendered voids/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 102ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:04:13 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:04:13 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:04:13 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/voids/5" for 10.1.17.238 at 2012-02-03 13:05:43 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mVoid Load (0.1ms)[0m  SELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1  [["id", "5"]]
+Rendered voids/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 101ms (Views: 45.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:05:44 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:05:44 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:05:44 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/voids" for 10.1.17.238 at 2012-02-03 13:05:57 -0500
+  Processing by VoidsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "void"=>{"litletxnid"=>"21123213213213213213213213213"}, "commit"=>"Create Void"}
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "voids" ("created_at", "litletxnid", "merchantid", "merchanttxnid", "reportgroup", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 03 Feb 2012 18:05:57 UTC +00:00], ["litletxnid", "21123213213213213213213213213"], ["merchantid", nil], ["merchanttxnid", nil], ["reportgroup", nil], ["updated_at", Fri, 03 Feb 2012 18:05:57 UTC +00:00]]
+Redirected to http://l-rganmukh-ws490:3000/voids/6
+Completed 302 Found in 11ms
+
+
+Started GET "/voids/6" for 10.1.17.238 at 2012-02-03 13:05:57 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mVoid Load (0.1ms)[0m  SELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1  [["id", "6"]]
+Rendered voids/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 104ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:05:58 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:05:58 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:05:58 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/voids" for 10.1.17.238 at 2012-02-03 13:11:45 -0500
+  Processing by VoidsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "void"=>{"litletxnid"=>"123456789987654321"}, "commit"=>"Create Void"}
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "voids" ("created_at", "litletxnid", "merchantid", "merchanttxnid", "reportgroup", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 03 Feb 2012 18:11:45 UTC +00:00], ["litletxnid", "123456789987654321"], ["merchantid", nil], ["merchanttxnid", nil], ["reportgroup", nil], ["updated_at", Fri, 03 Feb 2012 18:11:45 UTC +00:00]]
+Redirected to http://l-rganmukh-ws490:3000/voids/7
+Completed 302 Found in 12ms
+
+
+Started GET "/voids/7" for 10.1.17.238 at 2012-02-03 13:11:45 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mVoid Load (0.1ms)[0m  SELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1  [["id", "7"]]
+Rendered voids/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 111ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:11:46 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:11:46 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:11:46 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-03 13:15:55 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:15:56 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:15:56 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:15:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/sales/new" for 10.1.17.238 at 2012-02-03 13:16:00 -0500
+  Processing by SalesController#new as HTML
+Rendered sales/_form.html.erb (20.0ms)
+Rendered sales/new.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:16:01 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:16:01 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:16:01 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/sales" for 10.1.17.238 at 2012-02-03 13:16:15 -0500
+  Processing by SalesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "sale"=>{"amount"=>"123213", "firstname"=>"2", "lastname"=>"2", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"4100000000000001", "cardmonth"=>"1", "cardyear"=>"2013", "cvv"=>"123"}, "commit"=>"Create Sale"}
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address1", ""], ["amount", "123213"], ["cardmonth", "1"], ["cardnumber", "4100000000000001"], ["cardyear", "2013"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 18:16:15 UTC +00:00], ["cvv", "123"], ["email", ""], ["firstname", "2"], ["lastname", "2"], ["litletxnid", nil], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 18:16:15 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/sales/76
+Completed 302 Found in 23ms
+
+
+Started GET "/sales/76" for 10.1.17.238 at 2012-02-03 13:16:16 -0500
+  Processing by SalesController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1  [["id", "76"]]
+Rendered sales/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 636ms (Views: 7.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:16:16 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:16:16 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:16:16 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-03 13:28:25 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:28:25 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:28:25 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:28:25 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-03 13:48:08 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 13:48:08 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 13:48:08 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 13:48:08 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/credits/new" for 10.1.17.238 at 2012-02-03 14:04:26 -0500
+  Processing by CreditsController#new as HTML
+Rendered credits/_form.html.erb (22.7ms)
+Rendered credits/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 14:04:26 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 14:04:26 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 14:04:27 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/credits" for 10.1.17.238 at 2012-02-03 14:05:38 -0500
+  Processing by CreditsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "credit"=>{"merchantid"=>"", "merchanttxnid"=>"", "reportgroup"=>"", "orderid"=>"", "amount"=>"2132133", "firstname"=>"r", "lastname"=>"g", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"4100000000000001", "cardmonth"=>"1", "cardyear"=>"2013", "cvv"=>"213"}, "commit"=>"Create Credit"}
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "credits" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address1", ""], ["amount", "2132133"], ["cardmonth", "1"], ["cardnumber", "4100000000000001"], ["cardyear", "2013"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 19:05:38 UTC +00:00], ["cvv", "213"], ["email", ""], ["firstname", "r"], ["lastname", "g"], ["litletxnid", nil], ["merchantid", ""], ["merchanttxnid", ""], ["orderid", ""], ["reportgroup", ""], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 19:05:38 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/credits/12
+Completed 302 Found in 64ms
+
+
+Started GET "/credits/12" for 10.1.17.238 at 2012-02-03 14:05:38 -0500
+  Processing by CreditsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mCredit Load (0.1ms)[0m  SELECT "credits".* FROM "credits" WHERE "credits"."id" = ? LIMIT 1  [["id", "12"]]
+Completed 500 Internal Server Error in 97ms
+
+NameError (creditResponse):
+  app/controllers/credits_controller.rb:31:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started POST "/credits" for 10.1.17.238 at 2012-02-03 14:06:41 -0500
+  Processing by CreditsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "credit"=>{"merchantid"=>"", "merchanttxnid"=>"", "reportgroup"=>"", "orderid"=>"", "amount"=>"2132133", "firstname"=>"r", "lastname"=>"g", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"4100000000000001", "cardmonth"=>"1", "cardyear"=>"2013", "cvv"=>"213"}, "commit"=>"Create Credit"}
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "credits" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address1", ""], ["amount", "2132133"], ["cardmonth", "1"], ["cardnumber", "4100000000000001"], ["cardyear", "2013"], ["city", ""], ["country", "US"], ["created_at", Fri, 03 Feb 2012 19:06:41 UTC +00:00], ["cvv", "213"], ["email", ""], ["firstname", "r"], ["lastname", "g"], ["litletxnid", nil], ["merchantid", ""], ["merchanttxnid", ""], ["orderid", ""], ["reportgroup", ""], ["state", "AL"], ["updated_at", Fri, 03 Feb 2012 19:06:41 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rganmukh-ws490:3000/credits/13
+Completed 302 Found in 21ms
+
+
+Started GET "/credits/13" for 10.1.17.238 at 2012-02-03 14:06:41 -0500
+  Processing by CreditsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mCredit Load (0.2ms)[0m  SELECT "credits".* FROM "credits" WHERE "credits"."id" = ? LIMIT 1  [["id", "13"]]
+Completed 500 Internal Server Error in 54ms
+
+NameError (creditResponse):
+  app/controllers/credits_controller.rb:31:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/captures/new" for 10.1.17.238 at 2012-02-03 14:11:28 -0500
+  Processing by CapturesController#new as HTML
+Rendered captures/_form.html.erb (16.6ms)
+Rendered captures/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 14:11:28 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 14:11:28 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 14:11:28 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/captures" for 10.1.17.238 at 2012-02-03 14:11:33 -0500
+  Processing by CapturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "capture"=>{"merchantid"=>"", "merchanttxnid"=>"", "orderid"=>"", "litletxnid"=>"123456789123456789", "amount"=>"1234"}, "commit"=>"Create Capture"}
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "captures" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address1", nil], ["amount", "1234"], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Fri, 03 Feb 2012 19:11:33 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "123456789123456789"], ["merchantid", ""], ["merchanttxnid", ""], ["orderid", ""], ["state", nil], ["updated_at", Fri, 03 Feb 2012 19:11:33 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/captures/7
+Completed 302 Found in 22ms
+
+
+Started GET "/captures/7" for 10.1.17.238 at 2012-02-03 14:11:33 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mCapture Load (0.1ms)[0m  SELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1  [["id", "7"]]
+Rendered captures/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 136ms (Views: 6.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 14:11:33 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 14:11:34 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 14:11:34 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/captures/7" for 10.1.17.238 at 2012-02-03 14:11:55 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCapture Load (0.1ms)[0m  [1mSELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1[0m  [["id", "7"]]
+Rendered captures/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 146ms (Views: 6.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 14:11:56 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 14:11:56 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 14:11:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/captures/7" for 10.1.17.238 at 2012-02-03 14:11:59 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mCapture Load (0.1ms)[0m  SELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1  [["id", "7"]]
+Rendered captures/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 122ms (Views: 6.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 14:11:59 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 14:11:59 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 14:11:59 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/captures" for 10.1.17.238 at 2012-02-03 14:12:03 -0500
+  Processing by CapturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "capture"=>{"merchantid"=>"", "merchanttxnid"=>"", "orderid"=>"", "litletxnid"=>"123456789123456789", "amount"=>"1234"}, "commit"=>"Create Capture"}
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "captures" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address1", nil], ["amount", "1234"], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Fri, 03 Feb 2012 19:12:03 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "123456789123456789"], ["merchantid", ""], ["merchanttxnid", ""], ["orderid", ""], ["state", nil], ["updated_at", Fri, 03 Feb 2012 19:12:03 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/captures/8
+Completed 302 Found in 62ms
+
+
+Started GET "/captures/8" for 10.1.17.238 at 2012-02-03 14:12:04 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mCapture Load (0.1ms)[0m  SELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1  [["id", "8"]]
+Rendered captures/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 122ms (Views: 46.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 14:12:04 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 14:12:04 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 14:12:04 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/captures/8" for 10.1.17.238 at 2012-02-03 14:12:46 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCapture Load (0.1ms)[0m  [1mSELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1[0m  [["id", "8"]]
+Rendered captures/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 127ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 14:12:46 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 14:12:46 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 14:12:46 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/captures/8" for 10.1.17.238 at 2012-02-03 14:12:47 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mCapture Load (0.2ms)[0m  SELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1  [["id", "8"]]
+Rendered captures/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 124ms (Views: 7.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 14:12:48 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 14:12:48 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 14:12:48 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/captures/8" for 10.1.17.238 at 2012-02-03 14:12:48 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCapture Load (0.1ms)[0m  [1mSELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1[0m  [["id", "8"]]
+Rendered captures/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 121ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 14:12:49 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 14:12:49 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 14:12:49 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/captures/new" for 10.1.17.238 at 2012-02-03 14:48:02 -0500
+  Processing by CapturesController#new as HTML
+Rendered captures/_form.html.erb (16.8ms)
+Rendered captures/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 14:48:02 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 14:48:02 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 14:48:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/captures" for 10.1.17.238 at 2012-02-03 14:48:35 -0500
+  Processing by CapturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItnVwKU0MwDJTUlrtUTCCRFCFXkIOCQrCd8Vsg8Nr38=", "capture"=>{"merchantid"=>"", "merchanttxnid"=>"", "orderid"=>"", "litletxnid"=>"123213123213213213213213", "amount"=>"1232"}, "commit"=>"Create Capture"}
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "captures" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", nil], ["amount", "1232"], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Fri, 03 Feb 2012 19:48:35 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "123213123213213213213213"], ["merchantid", ""], ["merchanttxnid", ""], ["orderid", ""], ["state", nil], ["updated_at", Fri, 03 Feb 2012 19:48:35 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/captures/9
+Completed 302 Found in 20ms
+
+
+Started GET "/captures/9" for 10.1.17.238 at 2012-02-03 14:48:35 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mCapture Load (0.1ms)[0m  [1mSELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1[0m  [["id", "9"]]
+Completed 500 Internal Server Error in 54ms
+
+NameError (captureResponse):
+  app/controllers/captures_controller.rb:19:in `show'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started GET "/credits/new" for 10.1.17.238 at 2012-02-03 14:48:43 -0500
+  Processing by CreditsController#new as HTML
+Rendered credits/_form.html.erb (21.3ms)
+Rendered credits/new.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-03 14:48:43 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-03 14:48:43 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-03 14:48:43 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/credits/new" for 10.1.17.238 at 2012-02-03 14:50:28 -0500
+  Processing by CreditsController#new as HTML
+Rendered credits/_form.html.erb (88.6ms)
+Rendered credits/new.html.erb within layouts/application (89.1ms)
+Completed 500 Internal Server Error in 94ms
+
+ActionView::Template::Error (undefined method `litleTxnId' for #<Credit:0x00000013a05628>):
+    13:   <h4>Order Information</h4>
+    14:   <div class="field">
+    15:     <%= f.label :litleTxnId %><br />
+    16:     <%= f.text_field :litleTxnId %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :amount %><br />
+  app/views/credits/_form.html.erb:16:in `block in _app_views_credits__form_html_erb__2517900251987515319_162366400'
+  app/views/credits/_form.html.erb:1:in `_app_views_credits__form_html_erb__2517900251987515319_162366400'
+  app/views/credits/new.html.erb:3:in `_app_views_credits_new_html_erb___183316307854765274_179941680'
+  app/controllers/credits_controller.rb:49:in `new'
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.9ms)

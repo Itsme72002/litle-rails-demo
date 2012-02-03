@@ -13,27 +13,16 @@ class CapturesController < ApplicationController
   # GET /captures/1
   # GET /captures/1.json
   def show
-    gateway = ActiveMerchant::Billing::LitleGateway.new(
-	   :login => 'PHXMLTEST',
-            :password => 'certpass')
-    options = { 'merchantId' => @capture.merchantid,
-		'id' => @capture.merchanttxnid,
-		'reportGroup' => 'Plantes',
-		'orderId' => @capture.orderid,
-		'orderSource' => 'ecommerce',s
-		'litleTxnId' => @capture.litletxnid,
-		}
-    amount = @capture.amount
+    @capture = Capture.find(params[:id])
+    gateway = ActiveMerchant::Billing::LitleGateway.new
   
-    response = gateway.capture(amount,credit_card, options)
-    @message = response.message
-    if @message == 'Valid Format'
-	@post = "Will transfer $#{sprintf("%.2f", options['amount'].to_f / 100)} from your Autorization transcation #{@capture.litletxnid}"
-        @litletxnid = response.captureResponse.litleTxnId
-        @litlepostdate = response.captureResponse.postDate
-    else
-     	render :action => 'error'
-    end
+   response = gateway.capture(@capture.amount,@capture.litletxnid)
+    
+   if response.success?
+       @post =  "Successfully charged $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}"   
+   else
+       @post =  "Unsucessful Transaction"   
+     end
   end
 
   # GET /captures/new

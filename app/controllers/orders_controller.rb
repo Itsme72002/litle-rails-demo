@@ -14,9 +14,8 @@ class OrdersController < ApplicationController
   # GET /orders/1.json
   def show
     @order = Order.find(params[:id])
-    gateway = ActiveMerchant::Billing::LitleGateway.new(
-            :login => 'PHXMLTEST',
-            :password => 'certpass')
+    gateway = ActiveMerchant::Billing::LitleGateway.new
+            
     
     amount =  @order.amount
   

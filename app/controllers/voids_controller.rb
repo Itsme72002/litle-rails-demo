@@ -13,21 +13,16 @@ class VoidsController < ApplicationController
   # GET /voids/1
   # GET /voids/1.json
   def show
+    gateway = ActiveMerchant::Billing::LitleGateway.new
+    
     @void = Void.find(params[:id])
 
-    options = { 'merchantId' => @void.merchantid,
-                'id' => @void.merchanttxnid,
-		'reportGroup' => @void.reportgroup,
-		'litleTxnId' => @void.litletxnid
-	      }
-    response = ActiveMerchant::Billing::LitleGateway.void(options)
-    @message = response.message
-    if @message == 'Valid Format'
-        @litletxnid = response.voidResponse.litleTxnId
-        @litlepostdate = response.voidResponse.postDate
-	@post = "Will void the transcation from the Transcation #{@void.litletxnid}"
+    response = gateway.void(0,@void.litletxnid)
+    
+    if response.success?
+            @post =  "Sucessfully Voided the Transaction #{@void.litletxnid}"   
     else
-     	render :action => 'error'
+            render :action => 'error'  
     end
   end
 

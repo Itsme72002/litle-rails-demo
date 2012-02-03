@@ -14,9 +14,7 @@ class SalesController < ApplicationController
   # GET /sales/1.json
   def show
     @sale = Sale.find(params[:id])
-    gateway = ActiveMerchant::Billing::LitleGateway.new(
-            :login => 'PHXMLTEST',
-            :password => 'certpass')
+    gateway = ActiveMerchant::Billing::LitleGateway.new
     
     amount =  @sale.amount
   
