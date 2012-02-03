@@ -14,33 +14,45 @@ class OrdersController < ApplicationController
   # GET /orders/1.json
   def show
     @order = Order.find(params[:id])
-    options = { 'merchantId' => @order.merchantid,
-		'id' => @order.merchanttxnid,
-                'reportGroup' => @order.reportgroup, 
-                'orderId' => @order.orderid, 
-                'orderSource' => @order.ordersource, 
-                'amount' => @order.amount,
-                'card' =>{'number' => @order.cardnumber, 'month' => @order.cardmonth, 'year' => @order.cardyear,'verification_value' => @order.cvv },
-                'billToAddress' =>{'name' => @order.name,
-				   'address1' => @order.address1,
+    gateway = ActiveMerchant::Billing::LitleGateway.new(
+            :login => 'PHXMLTEST',
+            :password => 'certpass')
+    
+    amount =  @order.amount
+  
+
+    options = { 
+		'orderSource' => 'ecommerce',
+		'billToAddress' => {
+				    'name' => @order.name,
+				    'address1' => @order.address1,
 				    'city' => @order.city,
 				    'state' => @order.state,
 				    'country' => ('US' or @order.country),
 				    'zip' => @order.zip,
-				    'email' => @order.email}}
- 
-# Pass the options hash through ActiveMerchant's LitleGateway to Litle Ruby API
-    response = ActiveMerchant::Billing::LitleGateway.authorization(options)
-    @message= response.message
-    if @message == 'Valid Format'
-       @litletxnid = response.authorizationResponse.litleTxnId
-       @litlepostdate = response.authorizationResponse.postDate
-       @post = "Will charged $#{sprintf("%.2f", options['amount'].to_f / 100)} to the credit card XXXX-XXXX-XXXX-#{sprintf("%.4i", options['card']['number'])[-4..-1]}"
-    else
-       render :action => 'error'
-    end
+				    'email' => @order.email}	
+		}
+    credit_card = ActiveMerchant::Billing::CreditCard.new(
+               :first_name         => "DEFAULTT",
+               :last_name          => @order.name,
+                :number             => @order.cardnumber,
+                :month              => @order.cardmonth,
+                :year               => @order.cardyear,
+                :verification_value => @order.cvv)
 
-  end
+  
+if credit_card.valid?
+    response = gateway.authorize(amount,credit_card,options)
+
+    if response.success?
+        @post =  "Successfully authorized a transaction of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}"   
+    else
+   	@post =  "Unsucessful Transaction"   
+    end
+else
+    render :action => 'error'  
+end
+end
 
   # GET /orders/new
   # GET /orders/new.json
