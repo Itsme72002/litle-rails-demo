@@ -18,11 +18,11 @@ class VoidsController < ApplicationController
     @void = Void.find(params[:id])
 
     response = gateway.void(@void.litletxnid)
-    
+
     if response.success?
             @post =  "Sucessfully Voided the Transaction #{@void.litletxnid}"   
     else
-      @post = response.message #render :action => 'error'  
+      @post = response.message
     end
   end
 

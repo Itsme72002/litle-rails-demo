@@ -44,7 +44,8 @@ if credit_card.valid?
     response = gateway.purchase(amount,credit_card,options)
 
   if response.success?
-    @post =  "Successfully charged an amount of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}" 
+    @post =  "Successfully charged an amount of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}"
+    @litletxnid = response.params['litleOnlineResponse'].saleResponse.litleTxnId 
   else
     @post =  "Unsucessful Transaction #{response.message} "   
   end

@@ -18,12 +18,13 @@ class CapturesController < ApplicationController
   begin
    response = gateway.capture(@capture.amount,@capture.litletxnid)
     if response.success?
-          #@post =  "Successfully charged $#{sprintf("%.2f", @capture.amount.to_f / 100)} using the transactionId: #{@capture.litletxnid} "
-          @post = capture.identification   
+          @post =  "Successfully charged $#{sprintf("%.2f", @capture.amount.to_f / 100)} using the transactionId: #{@capture.litletxnid}"
+          @litletxnid= response.params['litleOnlineResponse'].captureResponse.litleTxnId 
       else
           @post =  "Unsucessful Transaction #{response.message}"   
       end
   rescue 
+   # @post = response.message
     render :action => 'error'
   end
   end

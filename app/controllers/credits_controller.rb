@@ -21,7 +21,7 @@ def show
     render :action => 'error'
     end 
   if response.success?
-      @post =  "Successfully charged $#{sprintf("%.2f", @credits.amount.to_f / 100)} using the transactionId: #{@credits.litletxnid} "   
+      @post =  "Successfully refunded  $#{sprintf("%.2f", @credits.amount.to_f / 100)} using the transactionId: #{@credits.litletxnid} "   
   else
       @post =  "Unsucessful Transaction #{response.message}"   
     end
