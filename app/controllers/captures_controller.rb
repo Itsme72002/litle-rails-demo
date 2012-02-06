@@ -15,14 +15,17 @@ class CapturesController < ApplicationController
   def show
     @capture = Capture.find(params[:id])
     gateway = ActiveMerchant::Billing::LitleGateway.new
-  
+  begin
    response = gateway.capture(@capture.amount,@capture.litletxnid)
-    
-   if response.success?
-       @post =  "Successfully charged $#{sprintf("%.2f", @capture.amount.to_f / 100)} using the transactionId: #{@capture.litletxnid} "   
-   else
-       @post =  "Unsucessful Transaction #{response.message}"   
-     end
+    if response.success?
+          #@post =  "Successfully charged $#{sprintf("%.2f", @capture.amount.to_f / 100)} using the transactionId: #{@capture.litletxnid} "
+          @post = capture.identification   
+      else
+          @post =  "Unsucessful Transaction #{response.message}"   
+      end
+  rescue 
+    render :action => 'error'
+  end
   end
 
   # GET /captures/new

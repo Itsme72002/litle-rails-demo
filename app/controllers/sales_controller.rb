@@ -46,7 +46,7 @@ if credit_card.valid?
   if response.success?
     @post =  "Successfully charged an amount of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}" 
   else
-    @post =  "Unsucessful Transaction"   
+    @post =  "Unsucessful Transaction #{response.message} "   
   end
 else
 render :action => 'error'  

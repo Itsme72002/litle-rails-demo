@@ -15,16 +15,16 @@ class CreditsController < ApplicationController
 def show
     @credits = Credit.find(params[:id])
     gateway = ActiveMerchant::Billing::LitleGateway.new
-  
-    amount =  @credits.amount
-  
-   response = gateway.credit(amount,@credits.litletxnid)
-
-    if true #response.success?
-        #@post =  "Successfully charged $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}"   
-    #
-
- end
+  begin
+   response = gateway.credit(@credits.amount,@credits.litletxnid)
+  rescue
+    render :action => 'error'
+    end 
+  if response.success?
+      @post =  "Successfully charged $#{sprintf("%.2f", @credits.amount.to_f / 100)} using the transactionId: #{@credits.litletxnid} "   
+  else
+      @post =  "Unsucessful Transaction #{response.message}"   
+    end
 end
 
   # GET /credits/new

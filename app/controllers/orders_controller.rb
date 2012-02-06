@@ -39,20 +39,25 @@ class OrdersController < ApplicationController
                 :year               => @order.cardyear,
                 :verification_value => @order.cvv)
 
-  
-if credit_card.valid?
-    response = gateway.authorize(amount,credit_card,options)
 
+if credit_card.valid?
+  begin
+    response = gateway.authorize(amount,credit_card,options)
+  rescue
+        render :action => 'error'
+      end
     if response.success?
         @post =  "Successfully authorized an amount of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}" 
         @litletxnid = response.authorization  
         @message = response.message 
     else
-   	@post =  "Unsucessful Transaction"   
+   	@post =  "Unsucessful Transaction #{response.message}"   
     end
+  
 else
     render :action => 'error'  
 end
+
 end
 
   # GET /orders/new
