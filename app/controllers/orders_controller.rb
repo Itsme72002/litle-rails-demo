@@ -44,7 +44,9 @@ if credit_card.valid?
     response = gateway.authorize(amount,credit_card,options)
 
     if response.success?
-        @post =  "Successfully authorized a transaction of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}"   
+        @post =  "Successfully authorized an amount of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}" 
+        @litletxnid = response.authorization  
+        @message = response.message 
     else
    	@post =  "Unsucessful Transaction"   
     end

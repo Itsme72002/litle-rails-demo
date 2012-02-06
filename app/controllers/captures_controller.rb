@@ -19,9 +19,9 @@ class CapturesController < ApplicationController
    response = gateway.capture(@capture.amount,@capture.litletxnid)
     
    if response.success?
-       @post =  "Successfully charged $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}"   
+       @post =  "Successfully charged $#{sprintf("%.2f", @capture.amount.to_f / 100)} using the transactionId: #{@capture.litletxnid} "   
    else
-       @post =  "Unsucessful Transaction"   
+       @post =  "Unsucessful Transaction #{response.message}"   
      end
   end
 
