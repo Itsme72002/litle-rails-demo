@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  merchantid: MyString
+  merchanttxid: MyString
+  name: MyString
+  address1: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+  zip: MyString
+  email: MyString
+  cardnumber: MyString
+  cardmonth: MyString
+  cardyear: MyString
+  cvv: MyString
+  created_at: 2012-02-07 14:07:23
+  updated_at: 2012-02-07 14:07:23
+
+two:
+  merchantid: MyString
+  merchanttxid: MyString
+  name: MyString
+  address1: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+  zip: MyString
+  email: MyString
+  cardnumber: MyString
+  cardmonth: MyString
+  cardyear: MyString
+  cvv: MyString
+  created_at: 2012-02-07 14:07:23
+  updated_at: 2012-02-07 14:07:23

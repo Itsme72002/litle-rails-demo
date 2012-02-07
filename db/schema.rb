@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111214185128) do
+ActiveRecord::Schema.define(:version => 20120207190723) do
 
   create_table "authreversals", :force => true do |t|
     t.string   "merchantid"
@@ -117,6 +117,24 @@ ActiveRecord::Schema.define(:version => 20111214185128) do
     t.string   "country"
     t.string   "zip"
     t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tokens", :force => true do |t|
+    t.string   "merchantid"
+    t.string   "merchanttxid"
+    t.string   "name"
+    t.string   "address1"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.string   "zip"
+    t.string   "email"
+    t.string   "cardnumber"
+    t.string   "cardmonth"
+    t.string   "cardyear"
+    t.string   "cvv"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

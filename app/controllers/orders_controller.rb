@@ -50,6 +50,7 @@ if credit_card.valid?
         @post =  "Successfully authorized an amount of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}" 
         @litletxnid = response.authorization  
         @message = response.message 
+        puts response.params
     else
    	@post =  "Unsucessful Transaction #{response.message}"   
     end

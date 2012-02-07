@@ -1,4 +1,6 @@
 Demo::Application.routes.draw do
+  resources :tokens
+
   resources :authreversals
 
   resources :voids

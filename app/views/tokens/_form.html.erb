@@ -1,0 +1,61 @@
+<%= form_for(@token) do |f| %>
+  <% if @token.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@token.errors.count, "error") %> prohibited this token from being saved:</h2>
+
+      <ul>
+      <% @token.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<h4>Billing Address</h4>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address1 %><br />
+    <%= f.text_field :address1 %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+<div class="field">
+    <%= f.label :state %><br />
+    <%= f.select :state, ["AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"] %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.select :country, ["US","Other"] %>
+  </div>
+  <div class="field">
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+<h4>Creditcard Information</h4>
+  <div class="field">
+    <%= f.label :cardnumber %><br />
+    <%= f.text_field :cardnumber %>
+  </div>
+  <div class="select">
+    <%= f.label :expdate %><br />
+    <%= f.select :cardmonth, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] %>
+    /
+    <%= f.select :cardyear, [2012, 2013, 2014, 2015, 2016, 2017] %>
+  </div>
+  <div class="field">
+    <abbr title="Card Verification Value">CVV</abbr>/
+    <abbr title="Card Validation Check">CVC</abbr><br />
+    <%= f.number_field :cvv %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Create Token" %>
+  </div>
+<% end %>

@@ -1,0 +1,51 @@
+<h1>Listing tokens</h1>
+
+<table>
+  <tr>
+    <th>Merchantid</th>
+    <th>Merchanttxid</th>
+    <th>Name</th>
+    <th>Address1</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+    <th>Zip</th>
+    <th>Email</th>
+    <th>Cardnumber</th>
+    <th>Cardmonth</th>
+    <th>Cardyear</th>
+    <th>Cvv</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tokens.each do |token| %>
+  <tr>
+    <td><%= token.merchantid %></td>
+    <td><%= token.merchanttxid %></td>
+    <td><%= token.name %></td>
+    <td><%= token.address1 %></td>
+    <td><%= token.city %></td>
+    <td><%= token.state %></td>
+    <td><%= token.country %></td>
+    <td><%= token.zip %></td>
+    <td><%= token.email %></td>
+    <td><%= token.cardnumber %></td>
+    <td><%= token.cardmonth %></td>
+    <td><%= token.cardyear %></td>
+    <td><%= token.cvv %></td>
+    <td><%= token.created_at %></td>
+    <td><%= token.updated_at %></td>
+    <td><%= link_to 'Show', token %></td>
+    <td><%= link_to 'Edit', edit_token_path(token) %></td>
+    <td><%= link_to 'Destroy', token, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Token', new_token_path %>
