@@ -32,7 +32,7 @@ class OrdersController < ApplicationController
 				    'email' => @order.email}	
     }
     credit_card = ActiveMerchant::Billing::CreditCard.new(
-    :first_name         => "DEFAULTT",
+                                                          :first_name         => "DEFAULTT",
     :last_name          => @order.name,
     :number             => @order.cardnumber,
     :month              => @order.cardmonth,
@@ -42,18 +42,20 @@ class OrdersController < ApplicationController
     
     if credit_card.valid?
       response = gateway.authorize(amount,credit_card,options)
-    
+      
       if response.success?
-      @post =  "Successfully authorized an amount of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}" 
+        @post =  "Successfully authorized an amount of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}" 
       @litletxnid = response.authorization  
-      @message = response.message 
-      puts response.params
+      
+      
     else
-      @post =  "Unsucessful Transaction #{response.message}"   
+      @message = response.message 
+      render :action => 'error2'
+      
     end
     
   else
-    render :action => 'error'  
+    render :action => 'error1'  
   end
   
 end

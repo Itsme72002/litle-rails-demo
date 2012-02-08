@@ -30508,3 +30508,145 @@ ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypatt
   
 
 Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/orders/new" for 10.1.17.250 at 2012-02-08 12:10:45 -0500
+  Processing by OrdersController#new as HTML
+Rendered orders/_form.html.erb (19.5ms)
+Rendered orders/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.250 at 2012-02-08 12:10:45 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.250 at 2012-02-08 12:10:45 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/orders" for 10.1.17.250 at 2012-02-08 12:10:56 -0500
+  Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8jmi9ID/p6l9isXOCSywcb3dILaKp/iL2iKoZ8OXAbg=", "order"=>{"amount"=>"123", "name"=>"Jack", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"4100000000000001", "cardmonth"=>"1", "cardyear"=>"2013", "cvv"=>"123"}, "commit"=>"Auth"}
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "orders" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "merchantid", "merchanttxnid", "name", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", ""], ["amount", "123"], ["cardmonth", "1"], ["cardnumber", "4100000000000001"], ["cardyear", "2013"], ["city", ""], ["country", "US"], ["created_at", Wed, 08 Feb 2012 17:10:56 UTC +00:00], ["cvv", "123"], ["email", ""], ["merchantid", nil], ["merchanttxnid", nil], ["name", "Jack"], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Wed, 08 Feb 2012 17:10:56 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rgao-t5500:3002/orders/87
+Completed 302 Found in 20ms
+
+
+Started GET "/orders/87" for 10.1.17.250 at 2012-02-08 12:10:57 -0500
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"87"}
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "87"]]
+Rendered orders/error2.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 132ms (Views: 5.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.250 at 2012-02-08 12:10:57 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.250 at 2012-02-08 12:10:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 10.1.17.250 at 2012-02-08 12:11:00 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.1.17.250 at 2012-02-08 12:11:00 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.250 at 2012-02-08 12:11:00 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.250 at 2012-02-08 12:11:00 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/orders/new" for 10.1.17.250 at 2012-02-08 12:11:04 -0500
+  Processing by OrdersController#new as HTML
+Rendered orders/_form.html.erb (43.8ms)
+Rendered orders/new.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.250 at 2012-02-08 12:11:04 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.250 at 2012-02-08 12:11:04 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/orders" for 10.1.17.250 at 2012-02-08 12:11:12 -0500
+  Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8jmi9ID/p6l9isXOCSywcb3dILaKp/iL2iKoZ8OXAbg=", "order"=>{"amount"=>"123", "name"=>"", "address1"=>"", "city"=>"", "state"=>"AL", "country"=>"US", "zip"=>"", "email"=>"", "cardnumber"=>"", "cardmonth"=>"1", "cardyear"=>"2012", "cvv"=>""}, "commit"=>"Auth"}
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "orders" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "merchantid", "merchanttxnid", "name", "orderid", "ordersource", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", ""], ["amount", "123"], ["cardmonth", "1"], ["cardnumber", ""], ["cardyear", "2012"], ["city", ""], ["country", "US"], ["created_at", Wed, 08 Feb 2012 17:11:12 UTC +00:00], ["cvv", ""], ["email", ""], ["merchantid", nil], ["merchanttxnid", nil], ["name", ""], ["orderid", nil], ["ordersource", nil], ["reportgroup", nil], ["state", "AL"], ["updated_at", Wed, 08 Feb 2012 17:11:12 UTC +00:00], ["zip", ""]]
+Redirected to http://l-rgao-t5500:3002/orders/88
+Completed 302 Found in 21ms
+
+
+Started GET "/orders/88" for 10.1.17.250 at 2012-02-08 12:11:12 -0500
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"88"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "88"]]
+Rendered orders/error1.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 5.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.250 at 2012-02-08 12:11:13 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.250 at 2012-02-08 12:11:13 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 10.1.17.250 at 2012-02-08 12:11:16 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.1.17.250 at 2012-02-08 12:11:16 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.250 at 2012-02-08 12:11:16 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.250 at 2012-02-08 12:11:16 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
