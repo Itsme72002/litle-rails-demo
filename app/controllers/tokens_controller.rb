@@ -41,15 +41,14 @@ class TokensController < ApplicationController
       if response.success?
         @post =  "Successfully stored token with ID:" 
         @tokenid = response.params['litleOnlineResponse'].registerTokenResponse.litleToken 
-        @message = response.message
-    
         
       else
-        @post =  "Unsucessful Transaction #{response.message}"   
+        @message = response.message
+        render :action => 'error2'     
       end
       
     else
-      render :action => 'error'  
+      render :action =>'error1'  
     end
     
   end

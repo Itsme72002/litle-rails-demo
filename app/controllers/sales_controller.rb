@@ -47,10 +47,11 @@ if credit_card.valid?
     @post =  "Successfully charged an amount of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}"
     @litletxnid = response.params['litleOnlineResponse'].saleResponse.litleTxnId 
   else
-    @post =  "Unsucessful Transaction #{response.message} "   
+    @message=response.message
+    render :action => 'error2'
   end
 else
-render :action => 'error'  
+render :action => 'error1'  
 end
 end
 
