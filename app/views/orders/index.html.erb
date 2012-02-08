@@ -2,11 +2,6 @@
 
 <table>
   <tr>
-    <th>MerchantID</th>
-    <th>MerchantTranscationID</th>
-    <th>ReportGroup</th>
-    <th>OrderID</th>
-    <th>OrderSource</th>
     <th>Amount</th>
     <th>Name</th>
     <th>CardNumber</th>
@@ -26,11 +21,6 @@
 
 <% @orders.each do |order| %>
   <tr>
-    <td><%= order.merchantid %></td>
-    <td><%= order.merchanttxnid %></td>
-    <td><%= order.reportgroup %></td>
-    <td><%= order.orderid %></td>
-    <td><%= order.ordersource %></td>
     <td><%= order.amount %></td>
     <td><%= order.name %></td>
     <td><%= order.cardnumber %></td>

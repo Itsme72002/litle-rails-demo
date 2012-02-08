@@ -2,9 +2,7 @@
 
 <table>
   <tr>
-    <th>MerchantID</th>
-    <th>MerchantTransactionID</th>
-    <th>OrderID</th>
+   
     <th>LitleTransactionID(From Authorzation LitleTranscationID)</th>
     <th>Amount</th>
     <th></th>
@@ -14,9 +12,7 @@
 
 <% @captures.each do |capture| %>
   <tr>
-    <td><%= capture.merchantid %></td>
-    <td><%= capture.merchanttxnid %></td>
-    <td><%= capture.orderid %></td>
+   
     <td><%= capture.litletxnid %></td>
     <td><%= capture.amount %></td>
     <td><%= link_to 'Edit', edit_capture_path(capture) %></td>

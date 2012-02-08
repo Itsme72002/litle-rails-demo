@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  merchantid: MyString
+  merchantid: 101
   orderid: MyString
-  litletxnid: MyString
+  litletxnid: 01010100101010101
   amount: MyString
   cardnumber: MyString
   cardmonth: MyString

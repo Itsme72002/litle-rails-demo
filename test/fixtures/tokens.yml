@@ -10,7 +10,7 @@ one:
   country: MyString
   zip: MyString
   email: MyString
-  cardnumber: MyString
+  cardnumber: 4242424242424242
   cardmonth: MyString
   cardyear: MyString
   cvv: MyString

@@ -2,11 +2,7 @@
 
 <table>
   <tr>
-    <th>MerchantID</th>
-    <th>MerchantTxnID</th>
-    <th>ReportGroup</th>
-    <th>OrderID</th>
-    <th>OrderSource</th>
+  
     <th>Amount</th>
     <th>CardNumber</th>
     <th>CardMonth</th>
@@ -27,11 +23,7 @@
 
 <% @sales.each do |sale| %>
   <tr>
-    <td><%= sale.merchantid %></td>
-    <td><%= sale.merchanttxnid %></td>
-    <td><%= sale.reportgroup %></td>
-    <td><%= sale.orderid %></td>
-    <td><%= sale.ordersource %></td>
+ 
     <td><%= sale.amount %></td>
     <td><%= sale.cardnumber %></td>
     <td><%= sale.cardmonth %></td>
