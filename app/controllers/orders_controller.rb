@@ -44,8 +44,8 @@ class OrdersController < ApplicationController
       response = gateway.authorize(amount,credit_card,options)
       
       if response.success?
-        @post =  "Successfully authorized an amount of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}" 
-      @litletxnid = response.authorization  
+      @post =  "Successfully authorized an amount of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}" 
+      @litletxnid = response.authorization
       
       
     else
