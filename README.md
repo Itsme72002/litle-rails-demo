@@ -14,6 +14,7 @@ In this Demo Rails (v3.1.1) App, The UI for this application allows realtime gen
  - Credit
  - Sale
  - Void
+ - Store (tokenization)
 
 All of the payment transactions above are accompanied by brief overview explaining there usage.  The explanations are located directly in the demo applications UI.
 
