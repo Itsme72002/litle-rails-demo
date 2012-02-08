@@ -36,11 +36,8 @@ class TokensController < ApplicationController
     }
     
     if credit_card.valid?
-      begin
         response = gateway.store(credit_card,options)
-      rescue
-        render :action => 'error'
-      end
+ 
       if response.success?
         @post =  "Successfully stored token with ID:" 
         @tokenid = response.params['litleOnlineResponse'].registerTokenResponse.litleToken 
@@ -55,12 +52,6 @@ class TokensController < ApplicationController
       render :action => 'error'  
     end
     
-    
-    
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @token }
-    end
   end
   
   # GET /tokens/new

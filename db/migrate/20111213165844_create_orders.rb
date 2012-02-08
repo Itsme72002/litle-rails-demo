@@ -7,7 +7,8 @@ class CreateOrders < ActiveRecord::Migration
       t.string :reportgroup
       t.string :ordersource
       t.string :amount
-      t.string :name
+      t.string :firstname
+      t.string :lastname
       t.string :address1
       t.string :city
       t.string :state
