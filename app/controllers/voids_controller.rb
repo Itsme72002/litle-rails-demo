@@ -22,7 +22,8 @@ class VoidsController < ApplicationController
     if response.success?
             @post =  "Sucessfully Voided the Transaction #{@void.litletxnid}"   
     else
-      @post = response.message
+      @message = response.message
+      render :action => 'error'    
     end
   end
 

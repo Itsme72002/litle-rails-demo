@@ -1,41 +1,37 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  merchantid: 101
-  reportgroup: Plants
-  orderid: 111
-  ordersource: ecommerce
-  litletxnid: 
   amount: 123
+  firstname: Bob
+  lastname: 123
   cardnumber: 4242424242424242
-  cardmonth: 08
-  cardyear: 12
+  cardmonth: 12
+  cardyear: 2013
   cvv: 123
-  firstname: R
-  lastname: G
-  address1: 
-  city: 
-  state: 
-  country: 
-  zip: 
-  email: 
 
 two:
-  merchantid: MyString
-  reportgroup: MyString
-  orderid: MyString
-  ordersource: MyString
-  litletxnid: MyString
-  amount: MyString
-  cardnumber: MyString
-  cardmonth: MyString
-  cardyear: MyString
-  cvv: MyString
-  firstname: MyString
-  lastname: MyString
-  address1: MyString
-  city: MyString
-  state: MyString
-  country: MyString
-  zip: MyString
-  email: MyString
+  amount: 123
+  firstname: Bob
+  lastname: 123
+  cardnumber: 4242424224242
+  cardmonth: 12
+  cardyear: 2013
+  cvv: 123
+
+three:
+  amount: 123
+  firstname: Bob
+  lastname: 123
+  cardnumber: 4242424242424242
+  cardmonth: 12
+  cardyear: 2011
+  cvv: 123
+  
+four:
+  amount: 1111111111111
+  firstname: Bob
+  lastname: 123
+  cardnumber: 4242424242424242
+  cardmonth: 12
+  cardyear: 2013
+  cvv: 123

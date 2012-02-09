@@ -1,35 +1,29 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  merchantid: MyString
-  merchanttxid: MyString
-  name: MyString
-  address1: MyString
-  city: MyString
-  state: MyString
-  country: MyString
-  zip: MyString
-  email: MyString
+  name: 123
   cardnumber: 4242424242424242
-  cardmonth: MyString
-  cardyear: MyString
-  cvv: MyString
-  created_at: 2012-02-07 14:07:23
-  updated_at: 2012-02-07 14:07:23
+  cardmonth: 12
+  cardyear: 2013
+  cvv: 123
 
 two:
-  merchantid: MyString
-  merchanttxid: MyString
-  name: MyString
-  address1: MyString
-  city: MyString
-  state: MyString
-  country: MyString
-  zip: MyString
-  email: MyString
-  cardnumber: MyString
-  cardmonth: MyString
-  cardyear: MyString
-  cvv: MyString
-  created_at: 2012-02-07 14:07:23
-  updated_at: 2012-02-07 14:07:23
+  name: 123
+  cardnumber: 4242424224242
+  cardmonth: 12
+  cardyear: 2013
+  cvv: 123
+
+three:
+  name: 123
+  cardnumber: 4242424242424242
+  cardmonth: 12
+  cardyear: 2011
+  cvv: 123
+  
+four:
+  name: 123
+  cardnumber: 4242424242424242
+  cardmonth: 12
+  cardyear: 2013
+  cvv: 123

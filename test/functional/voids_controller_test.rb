@@ -28,7 +28,11 @@ class VoidsControllerTest < ActionController::TestCase
     get :show, id: @void.to_param
     assert_response :success
   end
-
+  test "invalid litleTxnId" do
+      get :show, id: @void.to_param
+      assert_equal("No transaction found with specified litleTxnId",assigns(:message))
+      assert_template("voids/error","layouts/application")  
+  end
   test "should get edit" do
     get :edit, id: @void.to_param
     assert_response :success

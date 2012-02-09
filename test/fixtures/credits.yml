@@ -1,39 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  merchantid: MyString
-  reportgroup: MyString
-  orderid: MyString
-  litletxnid: MyString
-  amount: MyString
-  cardnumber: MyString
-  cardmonth: MyString
-  cardyear: MyString
-  cvv: MyString
-  firstname: MyString
-  lastname: MyString
-  address1: MyString
-  city: MyString
-  state: MyString
-  country: MyString
-  zip: MyString
-  email: MyString
+  litletxnid: 01010100101010101
+  amount: 123
 
 two:
-  merchantid: MyString
-  reportgroup: MyString
-  orderid: MyString
-  litletxnid: MyString
-  amount: MyString
-  cardnumber: MyString
-  cardmonth: MyString
-  cardyear: MyString
-  cvv: MyString
-  firstname: MyString
-  lastname: MyString
-  address1: MyString
-  city: MyString
-  state: MyString
-  country: MyString
-  zip: MyString
-  email: MyString
+  litletxnid: 01010100101010101
+  amount: 

@@ -1,9 +1,4 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  reportgroup: MyString
-  litletxnid: MyString
-
-two:
-  reportgroup: MyString
-  litletxnid: MyString
+  litletxnid: 01010100101010101

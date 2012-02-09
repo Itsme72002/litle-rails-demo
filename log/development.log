@@ -38314,3 +38314,916 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
 
 Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 11:55:59 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 11:55:59 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/credits/new" for 10.1.17.238 at 2012-02-09 11:56:02 -0500
+  Processing by CreditsController#new as HTML
+Rendered credits/_form.html.erb (16.5ms)
+Rendered credits/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 11:56:02 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 11:56:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/credits" for 10.1.17.238 at 2012-02-09 12:01:36 -0500
+  Processing by CreditsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N/iEiW8V+KUpN86MYesybt68jZGQM6pzcl2vSchyoTo=", "credit"=>{"litletxnid"=>"01010100101010101", "amount"=>""}, "commit"=>"Create Credit"}
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "credits" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address1", nil], ["amount", ""], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 17:01:36 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "01010100101010101"], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["reportgroup", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 17:01:36 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/credits/43
+Completed 302 Found in 23ms
+
+
+Started GET "/credits/43" for 10.1.17.238 at 2012-02-09 12:01:36 -0500
+  Processing by CreditsController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[35mCredit Load (0.1ms)[0m  SELECT "credits".* FROM "credits" WHERE "credits"."id" = ? LIMIT 1  [["id", "43"]]
+Rendered credits/error.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 97ms (Views: 8.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:01:36 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:01:36 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 12:01:45 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:01:45 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:01:45 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/credits/new" for 10.1.17.238 at 2012-02-09 12:02:53 -0500
+  Processing by CreditsController#new as HTML
+Rendered credits/_form.html.erb (16.6ms)
+Rendered credits/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:02:53 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:02:53 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/credits" for 10.1.17.238 at 2012-02-09 12:02:55 -0500
+  Processing by CreditsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N/iEiW8V+KUpN86MYesybt68jZGQM6pzcl2vSchyoTo=", "credit"=>{"litletxnid"=>"12321321321", "amount"=>""}, "commit"=>"Create Credit"}
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "credits" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address1", nil], ["amount", ""], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 17:02:55 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "12321321321"], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["reportgroup", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 17:02:55 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/credits/44
+Completed 302 Found in 34ms
+
+
+Started GET "/credits/44" for 10.1.17.238 at 2012-02-09 12:02:55 -0500
+  Processing by CreditsController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[35mCredit Load (0.1ms)[0m  SELECT "credits".* FROM "credits" WHERE "credits"."id" = ? LIMIT 1  [["id", "44"]]
+Rendered credits/error.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 117ms (Views: 9.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/credits" for 10.1.17.238 at 2012-02-09 12:02:56 -0500
+  Processing by CreditsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N/iEiW8V+KUpN86MYesybt68jZGQM6pzcl2vSchyoTo=", "credit"=>{"litletxnid"=>"12321321321", "amount"=>""}, "commit"=>"Create Credit"}
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "credits" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address1", nil], ["amount", ""], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 17:02:56 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "12321321321"], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["reportgroup", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 17:02:56 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/credits/45
+Completed 302 Found in 24ms
+
+
+Started GET "/credits/45" for 10.1.17.238 at 2012-02-09 12:02:56 -0500
+  Processing by CreditsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[35mCredit Load (0.1ms)[0m  SELECT "credits".* FROM "credits" WHERE "credits"."id" = ? LIMIT 1  [["id", "45"]]
+Rendered credits/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 148ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:02:56 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:02:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 12:10:24 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:10:24 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:10:24 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/voids/new" for 10.1.17.238 at 2012-02-09 12:10:26 -0500
+  Processing by VoidsController#new as HTML
+Rendered voids/_form.html.erb (7.8ms)
+Rendered voids/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:10:26 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:10:26 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:11:06 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/voids/new" for 10.1.17.238 at 2012-02-09 12:11:09 -0500
+  Processing by VoidsController#new as HTML
+Rendered voids/_form.html.erb (7.2ms)
+Rendered voids/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:11:09 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:11:09 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/voids" for 10.1.17.238 at 2012-02-09 12:11:11 -0500
+  Processing by VoidsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N/iEiW8V+KUpN86MYesybt68jZGQM6pzcl2vSchyoTo=", "void"=>{"litletxnid"=>"123213213"}, "commit"=>"Create Void"}
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "voids" ("created_at", "litletxnid", "merchantid", "merchanttxnid", "reportgroup", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 09 Feb 2012 17:11:11 UTC +00:00], ["litletxnid", "123213213"], ["merchantid", nil], ["merchanttxnid", nil], ["reportgroup", nil], ["updated_at", Thu, 09 Feb 2012 17:11:11 UTC +00:00]]
+Redirected to http://l-rganmukh-ws490:3000/voids/34
+Completed 302 Found in 12ms
+
+
+Started GET "/voids/34" for 10.1.17.238 at 2012-02-09 12:11:11 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mVoid Load (0.1ms)[0m  SELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1  [["id", "34"]]
+Rendered voids/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 69ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:11:11 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:11:11 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/voids/34" for 10.1.17.238 at 2012-02-09 12:12:06 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mVoid Load (0.1ms)[0m  [1mSELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1[0m  [["id", "34"]]
+Rendered voids/error.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 65ms (Views: 6.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:12:07 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:12:07 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:12:07 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 12:14:30 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:14:30 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:14:30 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:14:30 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/credits/new" for 10.1.17.238 at 2012-02-09 12:14:32 -0500
+  Processing by CreditsController#new as HTML
+Rendered credits/_form.html.erb (15.5ms)
+Rendered credits/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:14:32 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:14:32 -0500
+Served asset /Litle.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:14:32 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/credits" for 10.1.17.238 at 2012-02-09 12:14:35 -0500
+  Processing by CreditsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N/iEiW8V+KUpN86MYesybt68jZGQM6pzcl2vSchyoTo=", "credit"=>{"litletxnid"=>"12321321321", "amount"=>""}, "commit"=>"Create Credit"}
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "credits" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", nil], ["amount", ""], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 17:14:35 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "12321321321"], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["reportgroup", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 17:14:35 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/credits/46
+Completed 302 Found in 21ms
+
+
+Started GET "/credits/46" for 10.1.17.238 at 2012-02-09 12:14:35 -0500
+  Processing by CreditsController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mCredit Load (0.2ms)[0m  [1mSELECT "credits".* FROM "credits" WHERE "credits"."id" = ? LIMIT 1[0m  [["id", "46"]]
+Rendered credits/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 60ms (Views: 7.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:14:36 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:14:36 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:14:36 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 12:14:37 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:14:37 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:14:37 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:14:37 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/credits/new" for 10.1.17.238 at 2012-02-09 12:16:25 -0500
+  Processing by CreditsController#new as HTML
+Rendered credits/_form.html.erb (16.1ms)
+Rendered credits/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:16:25 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:16:25 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:16:25 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started POST "/credits" for 10.1.17.238 at 2012-02-09 12:16:40 -0500
+  Processing by CreditsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N/iEiW8V+KUpN86MYesybt68jZGQM6pzcl2vSchyoTo=", "credit"=>{"litletxnid"=>"01010100101010101", "amount"=>""}, "commit"=>"Create Credit"}
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "credits" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", nil], ["amount", ""], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 17:16:40 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "01010100101010101"], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["reportgroup", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 17:16:40 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/credits/47
+Completed 302 Found in 22ms
+
+
+Started GET "/credits/47" for 10.1.17.238 at 2012-02-09 12:16:40 -0500
+  Processing by CreditsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mCredit Load (0.2ms)[0m  [1mSELECT "credits".* FROM "credits" WHERE "credits"."id" = ? LIMIT 1[0m  [["id", "47"]]
+Rendered credits/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 108ms (Views: 6.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:16:40 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:16:40 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:16:40 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 12:16:43 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:16:43 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:16:43 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:16:43 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/credits/new" for 10.1.17.238 at 2012-02-09 12:17:26 -0500
+  Processing by CreditsController#new as HTML
+Rendered credits/_form.html.erb (16.1ms)
+Rendered credits/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:17:26 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:17:26 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:17:26 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.1ms)
+
+
+Started POST "/credits" for 10.1.17.238 at 2012-02-09 12:17:30 -0500
+  Processing by CreditsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N/iEiW8V+KUpN86MYesybt68jZGQM6pzcl2vSchyoTo=", "credit"=>{"litletxnid"=>"12321321321", "amount"=>"123"}, "commit"=>"Create Credit"}
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "credits" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", nil], ["amount", "123"], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 17:17:30 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "12321321321"], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["reportgroup", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 17:17:30 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/credits/48
+Completed 302 Found in 23ms
+
+
+Started GET "/credits/48" for 10.1.17.238 at 2012-02-09 12:17:30 -0500
+  Processing by CreditsController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mCredit Load (0.1ms)[0m  [1mSELECT "credits".* FROM "credits" WHERE "credits"."id" = ? LIMIT 1[0m  [["id", "48"]]
+Rendered credits/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 88ms (Views: 7.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:17:30 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:17:30 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:17:30 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 12:17:32 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:17:32 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:17:32 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:17:32 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/credits/new" for 10.1.17.238 at 2012-02-09 12:19:17 -0500
+  Processing by CreditsController#new as HTML
+Rendered credits/_form.html.erb (16.2ms)
+Rendered credits/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:19:17 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:19:17 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:19:17 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/credits" for 10.1.17.238 at 2012-02-09 12:19:27 -0500
+  Processing by CreditsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N/iEiW8V+KUpN86MYesybt68jZGQM6pzcl2vSchyoTo=", "credit"=>{"litletxnid"=>"101010100101010101", "amount"=>""}, "commit"=>"Create Credit"}
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "credits" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", nil], ["amount", ""], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 17:19:27 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "101010100101010101"], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["reportgroup", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 17:19:27 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/credits/49
+Completed 302 Found in 24ms
+
+
+Started GET "/credits/49" for 10.1.17.238 at 2012-02-09 12:19:27 -0500
+  Processing by CreditsController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mCredit Load (0.1ms)[0m  [1mSELECT "credits".* FROM "credits" WHERE "credits"."id" = ? LIMIT 1[0m  [["id", "49"]]
+Rendered credits/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 70ms (Views: 6.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:19:27 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:19:27 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:19:27 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 12:20:38 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:20:39 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:20:39 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:20:39 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/captures/new" for 10.1.17.238 at 2012-02-09 12:20:40 -0500
+  Processing by CapturesController#new as HTML
+Rendered captures/_form.html.erb (15.3ms)
+Rendered captures/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:20:40 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:20:40 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:20:40 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/captures" for 10.1.17.238 at 2012-02-09 12:20:42 -0500
+  Processing by CapturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N/iEiW8V+KUpN86MYesybt68jZGQM6pzcl2vSchyoTo=", "capture"=>{"litletxnid"=>"1232132131232132132", "amount"=>""}, "commit"=>"Create Capture"}
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "captures" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", nil], ["amount", ""], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 17:20:42 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "1232132131232132132"], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 17:20:42 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/captures/63
+Completed 302 Found in 22ms
+
+
+Started GET "/captures/63" for 10.1.17.238 at 2012-02-09 12:20:42 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"63"}
+  [1m[36mCapture Load (0.2ms)[0m  [1mSELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1[0m  [["id", "63"]]
+Rendered captures/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 217ms (Views: 7.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:20:43 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:20:43 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:20:43 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 12:21:48 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:21:48 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:21:48 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:21:48 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/captures/new" for 10.1.17.238 at 2012-02-09 12:21:49 -0500
+  Processing by CapturesController#new as HTML
+Rendered captures/_form.html.erb (15.3ms)
+Rendered captures/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:21:49 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:21:49 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:21:50 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (41.2ms)
+
+
+Started POST "/captures" for 10.1.17.238 at 2012-02-09 12:21:51 -0500
+  Processing by CapturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N/iEiW8V+KUpN86MYesybt68jZGQM6pzcl2vSchyoTo=", "capture"=>{"litletxnid"=>"", "amount"=>""}, "commit"=>"Create Capture"}
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "captures" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", nil], ["amount", ""], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 17:21:51 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", ""], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 17:21:51 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/captures/64
+Completed 302 Found in 23ms
+
+
+Started GET "/captures/64" for 10.1.17.238 at 2012-02-09 12:21:51 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[36mCapture Load (0.1ms)[0m  [1mSELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1[0m  [["id", "64"]]
+Rendered captures/error.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 63ms (Views: 7.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:21:52 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:21:52 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:21:52 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:21:53 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:21:55 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/credits/new" for 10.1.17.238 at 2012-02-09 12:21:57 -0500
+  Processing by CreditsController#new as HTML
+Rendered credits/_form.html.erb (16.9ms)
+Rendered credits/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:21:57 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:21:57 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:21:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/credits" for 10.1.17.238 at 2012-02-09 12:21:59 -0500
+  Processing by CreditsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N/iEiW8V+KUpN86MYesybt68jZGQM6pzcl2vSchyoTo=", "credit"=>{"litletxnid"=>"", "amount"=>""}, "commit"=>"Create Credit"}
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "credits" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", nil], ["amount", ""], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 17:21:59 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", ""], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["reportgroup", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 17:21:59 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/credits/50
+Completed 302 Found in 66ms
+
+
+Started GET "/credits/50" for 10.1.17.238 at 2012-02-09 12:21:59 -0500
+  Processing by CreditsController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mCredit Load (0.1ms)[0m  [1mSELECT "credits".* FROM "credits" WHERE "credits"."id" = ? LIMIT 1[0m  [["id", "50"]]
+Rendered credits/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 145ms (Views: 6.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:21:59 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:21:59 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:21:59 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 12:22:11 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:22:12 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:22:12 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:22:12 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/credits/new" for 10.1.17.238 at 2012-02-09 12:23:17 -0500
+  Processing by CreditsController#new as HTML
+Rendered credits/_form.html.erb (17.2ms)
+Rendered credits/new.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:23:18 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:23:18 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:23:18 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/credits" for 10.1.17.238 at 2012-02-09 12:23:40 -0500
+  Processing by CreditsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N/iEiW8V+KUpN86MYesybt68jZGQM6pzcl2vSchyoTo=", "credit"=>{"litletxnid"=>"01010100101010101", "amount"=>""}, "commit"=>"Create Credit"}
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "credits" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address1", nil], ["amount", ""], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 17:23:40 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "01010100101010101"], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["reportgroup", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 17:23:40 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/credits/51
+Completed 302 Found in 23ms
+
+
+Started GET "/credits/51" for 10.1.17.238 at 2012-02-09 12:23:40 -0500
+  Processing by CreditsController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mCredit Load (0.1ms)[0m  [1mSELECT "credits".* FROM "credits" WHERE "credits"."id" = ? LIMIT 1[0m  [["id", "51"]]
+Rendered credits/error.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 144ms (Views: 6.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:23:40 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:23:40 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:23:40 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 12:33:41 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:33:41 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:33:41 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:33:41 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/tokens/new" for 10.1.17.238 at 2012-02-09 12:33:43 -0500
+  Processing by TokensController#new as HTML
+Rendered tokens/_form.html.erb (17.4ms)
+Rendered tokens/new.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 12:33:43 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 12:33:43 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 12:33:43 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)

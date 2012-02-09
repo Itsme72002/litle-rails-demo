@@ -3,6 +3,9 @@ require 'test_helper'
 class SalesControllerTest < ActionController::TestCase
   setup do
     @sale = sales(:one)
+    @sale2 = sales(:two)
+    @sale3 = sales(:three)
+    @sale4 = sales(:four)
   end
 
   test "should get index" do
@@ -28,7 +31,20 @@ class SalesControllerTest < ActionController::TestCase
     get :show, id: @sale.to_param
     assert_response :success
   end
-
+  test "invalid creditcard number" do
+      get :show, id: @sale2.to_param
+      assert_template("sales/error1","layouts/application")
+      #assert_redirected_to(render :action => 'error1')
+   end
+   test "invalid expdate" do
+      get :show, id: @sale3.to_param
+      assert_template("sales/error1","layouts/application")
+   end
+   test "unsucessful transaction invalid amount" do
+      get :show, id: @sale4.to_param
+      assert_equal("Error validating xml data against the schema on line 9 the value has 13 digits, where precision must be within 12.",assigns(:message))
+      assert_template("sales/error2","layouts/application")
+    end
   test "should get edit" do
     get :edit, id: @sale.to_param
     assert_response :success
