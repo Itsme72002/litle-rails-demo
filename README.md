@@ -20,3 +20,13 @@ All of the payment transactions above are accompanied by brief overview explaini
 
 NOTICE: To submit a Capture, Void, or Credit transaction you must reference the LitleTxnId from a prior transaction.
 
+In order to run the functional and integration test:
+
+Set the database to test mode
+
+rake db:test:prepare
+
+run the tests from inside the dem app file:
+
+ruby -Itest test/../..
+
