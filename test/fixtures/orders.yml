@@ -1,17 +1,33 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  merchantid: MyString
-  amount: MyString
-  name: MyString
-  cardnumber: MyString
-  cardmonth: MyString
-  cardyear: MyString
+  amount: 123
+  name: 123
+  cardnumber: 4242424242424242
+  cardmonth: 12
+  cardyear: 2013
+  cvv: 123
 
 two:
-  merchantid: MyString
-  amount: MyString
-  name: MyString
-  cardnumber: MyString
-  cardmonth: MyString
-  cardyear: MyString
+  amount: 123
+  name: 123
+  cardnumber: 4242424224242
+  cardmonth: 12
+  cardyear: 2013
+  cvv: 123
+
+three:
+  amount: 123
+  name: 123
+  cardnumber: 4242424242424242
+  cardmonth: 12
+  cardyear: 2011
+  cvv: 123
+  
+four:
+  amount: 1111111111111
+  name: 123
+  cardnumber: 4242424242424242
+  cardmonth: 12
+  cardyear: 2013
+  cvv: 123
