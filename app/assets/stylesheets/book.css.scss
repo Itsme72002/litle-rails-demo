@@ -327,7 +327,8 @@ div.border, p.border {
 
 body {
   background: #f5f4f2;
-  background-image: url('../images/base/bg-bodypattern-clean.png');
+  /*background-image: url('../images/base/bg-bodypattern-clean.png');
+  */
   background-repeat: repeat;
   background-position: 50% 50%;
   color: #3f4243;
@@ -864,9 +865,9 @@ p.buttons .button:first-child {
 /* =============================================================================
    Branding and Layout-specific styles
    ========================================================================== */
-
+/*
 #Litle-branding {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -893,6 +894,7 @@ p.buttons .button:first-child {
 
   }
 }
+*/
 #content {
   width: 460px;
   padding: 0 160px;

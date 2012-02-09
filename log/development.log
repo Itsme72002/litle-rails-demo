@@ -36163,3 +36163,960 @@ ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypatt
   
 
 Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:18:40 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 106ms (Views: 105.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:18:45 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:18:45 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:18:45 -0500
+Served asset /Litle.jpg - 200 OK (1ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-09 09:18:45 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:18:45 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/captures/new" for 10.1.17.238 at 2012-02-09 09:18:53 -0500
+  Processing by CapturesController#new as HTML
+Rendered captures/_form.html.erb (17.4ms)
+Rendered captures/new.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-09 09:18:54 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:18:54 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:19:12 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:19:12 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:19:12 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-09 09:19:12 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:19:16 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:20:00 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/credits/new" for 10.1.17.238 at 2012-02-09 09:20:03 -0500
+  Processing by CreditsController#new as HTML
+Rendered credits/_form.html.erb (58.0ms)
+Rendered credits/new.html.erb within layouts/application (59.5ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-09 09:20:03 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:20:03 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/credits" for 10.1.17.238 at 2012-02-09 09:20:06 -0500
+  Processing by CreditsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3dH7YSvVsB38AEVyBfBq2VCnCyBtHRvSnRrS/m9J2R4=", "credit"=>{"litletxnid"=>"12321321321", "amount"=>""}, "commit"=>"Create Credit"}
+  [1m[36mSQL (21.2ms)[0m  [1mINSERT INTO "credits" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "reportgroup", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address1", nil], ["amount", ""], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 14:20:06 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "12321321321"], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["reportgroup", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 14:20:06 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/credits/42
+Completed 302 Found in 82ms
+
+
+Started GET "/credits/42" for 10.1.17.238 at 2012-02-09 09:20:06 -0500
+  Processing by CreditsController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[35mCredit Load (0.2ms)[0m  SELECT "credits".* FROM "credits" WHERE "credits"."id" = ? LIMIT 1  [["id", "42"]]
+Rendered credits/error.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 191ms (Views: 7.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-09 09:20:06 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:20:07 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:20:11 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 50ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-09 09:20:11 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:20:11 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:20:37 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:20:37 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:20:37 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-09 09:20:37 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:20:37 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:21:15 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:21:15 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:21:15 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/base/bg-bodypattern-clean.png" for 10.1.17.238 at 2012-02-09 09:21:16 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/base/bg-bodypattern-clean.png"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:21:16 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:22:44 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:25:17 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Compiled book.css  (235ms)  (pid 8403)
+Completed 200 OK in 259ms (Views: 258.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:25:17 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:25:17 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:25:17 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:25:20 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:25:20 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:25:20 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:25:20 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:25:30 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:25:30 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:25:30 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:25:31 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:25:31 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:25:31 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:25:37 -0500
+  Processing by BookController#index as */*
+Rendered book/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:25:37 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:25:37 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:25:37 -0500
+  Processing by BookController#index as */*
+Rendered book/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:25:38 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:25:38 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:29 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (41.4ms)
+Compiled book.css  (225ms)  (pid 8403)
+Completed 200 OK in 278ms (Views: 277.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:29 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:29 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:33:30 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:32 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:32 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:32 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:33:32 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:36 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:36 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:36 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:37 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:37 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:37 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:38 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:38 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:38 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:43 -0500
+  Processing by BookController#index as */*
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:43 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:43 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:44 -0500
+  Processing by BookController#index as */*
+Rendered book/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:44 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:44 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:48 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:48 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:48 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:33:48 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:48 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:48 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:48 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:33:49 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:50 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:50 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:50 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:33:50 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:51 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:51 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:51 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:33:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:52 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:52 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:52 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:33:52 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:56 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 51ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:56 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:56 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:57 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:57 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:57 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:33:57 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 50ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:33:57 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:33:57 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:35:06 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Compiled book.css  (221ms)  (pid 8403)
+Completed 200 OK in 233ms (Views: 232.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:35:06 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:35:06 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:35:06 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:35:18 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:35:19 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:35:19 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:35:20 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:35:20 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:35:20 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:35:24 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:35:24 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:35:24 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:35:24 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:35:24 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:35:24 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:35:27 -0500
+  Processing by BookController#index as */*
+Rendered book/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:35:28 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:35:28 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:35:28 -0500
+  Processing by BookController#index as */*
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:35:28 -0500
+Served asset /book.css - 200 OK (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:35:28 -0500
+Served asset /Litle.jpg - 200 OK (0ms)
+
+
+Started GET "/captures/new" for 10.1.17.238 at 2012-02-09 09:35:33 -0500
+  Processing by CapturesController#new as HTML
+Rendered captures/_form.html.erb (15.4ms)
+Rendered captures/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:35:33 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started POST "/captures" for 10.1.17.238 at 2012-02-09 09:35:38 -0500
+  Processing by CapturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Fvwv2iMJ7JY+LODFyQyz7HnRSfw42nPLfK2ZnjkHRE=", "capture"=>{"litletxnid"=>"132154325435435", "amount"=>"123"}, "commit"=>"Create Capture"}
+  [1m[36mSQL (42.6ms)[0m  [1mINSERT INTO "captures" ("address1", "amount", "cardmonth", "cardnumber", "cardyear", "city", "country", "created_at", "cvv", "email", "firstname", "lastname", "litletxnid", "merchantid", "merchanttxnid", "orderid", "state", "updated_at", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address1", nil], ["amount", "123"], ["cardmonth", nil], ["cardnumber", nil], ["cardyear", nil], ["city", nil], ["country", nil], ["created_at", Thu, 09 Feb 2012 14:35:38 UTC +00:00], ["cvv", nil], ["email", nil], ["firstname", nil], ["lastname", nil], ["litletxnid", "132154325435435"], ["merchantid", nil], ["merchanttxnid", nil], ["orderid", nil], ["state", nil], ["updated_at", Thu, 09 Feb 2012 14:35:38 UTC +00:00], ["zip", nil]]
+Redirected to http://l-rganmukh-ws490:3000/captures/55
+Completed 302 Found in 63ms
+
+
+Started GET "/captures/55" for 10.1.17.238 at 2012-02-09 09:35:38 -0500
+  Processing by CapturesController#show as HTML
+  Parameters: {"id"=>"55"}
+  [1m[35mCapture Load (0.1ms)[0m  SELECT "captures".* FROM "captures" WHERE "captures"."id" = ? LIMIT 1  [["id", "55"]]
+Rendered captures/error.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 122ms (Views: 48.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:35:39 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:35:41 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:35:41 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:35:41 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/voids/new" for 10.1.17.238 at 2012-02-09 09:36:03 -0500
+  Processing by VoidsController#new as HTML
+Rendered voids/_form.html.erb (8.5ms)
+Rendered voids/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:36:03 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:36:03 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/voids" for 10.1.17.238 at 2012-02-09 09:36:06 -0500
+  Processing by VoidsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3dH7YSvVsB38AEVyBfBq2VCnCyBtHRvSnRrS/m9J2R4=", "void"=>{"litletxnid"=>"12321321321"}, "commit"=>"Create Void"}
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "voids" ("created_at", "litletxnid", "merchantid", "merchanttxnid", "reportgroup", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 09 Feb 2012 14:36:06 UTC +00:00], ["litletxnid", "12321321321"], ["merchantid", nil], ["merchanttxnid", nil], ["reportgroup", nil], ["updated_at", Thu, 09 Feb 2012 14:36:06 UTC +00:00]]
+Redirected to http://l-rganmukh-ws490:3000/voids/33
+Completed 302 Found in 12ms
+
+
+Started GET "/voids/33" for 10.1.17.238 at 2012-02-09 09:36:06 -0500
+  Processing by VoidsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[35mVoid Load (0.1ms)[0m  SELECT "voids".* FROM "voids" WHERE "voids"."id" = ? LIMIT 1  [["id", "33"]]
+Rendered voids/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 71ms (Views: 7.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:36:07 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:36:07 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:36:08 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:36:08 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:36:08 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/orders/new" for 10.1.17.238 at 2012-02-09 09:36:13 -0500
+  Processing by OrdersController#new as HTML
+Rendered orders/_form.html.erb (21.0ms)
+Rendered orders/new.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:36:14 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:36:14 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/orders" for 10.1.17.238 at 2012-02-09 09:36:15 -0500
+  Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (1.0ms)[0m  [1mSELECT "orders".* FROM "orders" [0m
+Rendered orders/index.html.erb within layouts/application (100.1ms)
+Completed 200 OK in 112ms (Views: 106.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:36:15 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:36:16 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:36:33 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:36:33 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:36:33 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:36:33 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/captures/new" for 10.1.17.238 at 2012-02-09 09:36:35 -0500
+  Processing by CapturesController#new as HTML
+Rendered captures/_form.html.erb (16.8ms)
+Rendered captures/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:36:35 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:36:35 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:36:35 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/captures" for 10.1.17.238 at 2012-02-09 09:36:36 -0500
+  Processing by CapturesController#index as HTML
+  [1m[35mCapture Load (0.5ms)[0m  SELECT "captures".* FROM "captures" 
+Rendered captures/index.html.erb within layouts/application (74.5ms)
+Completed 200 OK in 84ms (Views: 80.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:36:36 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:36:36 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:36:36 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 10.1.17.238 at 2012-02-09 09:36:39 -0500
+  Processing by BookController#index as HTML
+Rendered book/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/book.css?body=1" for 10.1.17.238 at 2012-02-09 09:36:39 -0500
+Served asset /book.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Litle.jpg" for 10.1.17.238 at 2012-02-09 09:36:39 -0500
+Served asset /Litle.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/favicon.ico" for 10.1.17.238 at 2012-02-09 09:36:39 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+
+Rendered /usr/lib64/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
