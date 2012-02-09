@@ -31,6 +31,11 @@ class TokensControllerTest < ActionController::TestCase
     get :show, id: @token.to_param
     assert_response :success
   end
+  test "sucessful token" do
+    get :show, id: @token.to_param   
+    assert_equal("Successfully stored token with ID:",assigns(:post))
+    assert_template("tokens/show","layouts/application")
+  end
   test "invalid creditcard number" do
      get :show, id: @token2.to_param
      assert_template("tokens/error1","layouts/application")

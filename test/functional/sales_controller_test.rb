@@ -31,6 +31,11 @@ class SalesControllerTest < ActionController::TestCase
     get :show, id: @sale.to_param
     assert_response :success
   end
+  test "sucessful sales" do
+    get :show, id: @sale.to_param   
+    assert_equal("Successfully charged an amount of $1.23 to the credit card XXXX-XXXX-XXXX-4242",assigns(:post))
+    assert_template("sales/show","layouts/application")
+  end
   test "invalid creditcard number" do
       get :show, id: @sale2.to_param
       assert_template("sales/error1","layouts/application")

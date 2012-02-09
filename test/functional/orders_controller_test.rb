@@ -35,6 +35,7 @@ class OrdersControllerTest < ActionController::TestCase
   test "sucessful auth" do
     get :show, id: @order.to_param   
     assert_equal("Successfully authorized an amount of $1.23 to the credit card XXXX-XXXX-XXXX-4242",assigns(:post))
+    assert_template("orders/show","layouts/application")  
   end
   test "invalid creditcard number" do
     get :show, id: @order2.to_param
