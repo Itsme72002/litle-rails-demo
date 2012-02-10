@@ -865,36 +865,7 @@ p.buttons .button:first-child {
 /* =============================================================================
    Branding and Layout-specific styles
    ========================================================================== */
-/*
-#Litle-branding {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  color: #f5f4f2;
-  height: 70px;
-  @include box-shadow(0 3px 10px rgba(0, 0, 0, 0.5));
 
-  .wrapper {
-    position: relative;
-    height: 70px;
-  }
-
-  hgroup {
-    margin-top: 10px;
-    line-height: 50px;
-  }
-
-  .logo {
-    float: left;
-    width: 0;
-    height: 0;
-    margin: 0 0 0 0;
-
-  }
-}
-*/
 #content {
   width: 460px;
   padding: 0 160px;

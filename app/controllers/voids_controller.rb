@@ -20,7 +20,7 @@ class VoidsController < ApplicationController
     response = gateway.void(@void.litletxnid)
 
     if response.success?
-            @post =  "Sucessfully Voided the Transaction #{@void.litletxnid}"   
+            @post =  "Successfully Voided the Transaction #{@void.litletxnid}"   
     else
       @message = response.message
       render :action => 'error'    

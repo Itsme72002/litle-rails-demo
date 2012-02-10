@@ -26,7 +26,7 @@ Set the database to test mode
 
 rake db:test:prepare
 
-run the tests from inside the dem app file:
+run the tests from inside the demo app file:
 
 ruby -Itest test/../..
 

@@ -20,7 +20,8 @@ class CapturesController < ApplicationController
  
     if response.success?
     @post =  "Successfully charged $#{sprintf("%.2f", @capture.amount.to_f / 100)} using the transactionId: #{@capture.litletxnid}"
-    @litletxnid= response.params['litleOnlineResponse'].captureResponse.litleTxnId 
+    @litletxnid= response.params['litleOnlineResponse'].captureResponse.litleTxnId
+    @message=response.message 
     else
     @message=response.message
      render :action => 'error' 
@@ -49,7 +50,6 @@ class CapturesController < ApplicationController
   # POST /captures.json
   def create
     @capture = Capture.new(params[:capture])
-
     respond_to do |format|
       if @capture.save
         format.html { redirect_to @capture, notice: 'Capture was successfully created.' }
