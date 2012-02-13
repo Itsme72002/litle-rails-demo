@@ -46,7 +46,7 @@ class OrdersController < ApplicationController
       
       if response.success?
       @post =  "Successfully authorized an amount of $#{sprintf("%.2f", amount.to_f / 100)} to the credit card #{credit_card.display_number}" 
-      @litletxnid = response.authorization
+      @litletxnid = response.params['litleOnlineResponse'].authorizationResponse.litleTxnId
       
       
     else
