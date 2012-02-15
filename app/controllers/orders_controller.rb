@@ -22,15 +22,15 @@ class OrdersController < ApplicationController
     
     options = {
     
-		'orderSource' => 'ecommerce',
-		'billToAddress' => {
-				    'name' => @order.name,
-				    'address1' => @order.address1,
-				    'city' => @order.city,
-				    'state' => @order.state,
-				    'country' => ('US' or @order.country),
-				    'zip' => @order.zip,
-				    'email' => @order.email}	
+		#'orderSource' => 'ecommerce',
+		:billing_address => {
+				    :name => @order.name,
+				    :address1 => @order.address1,
+				    :city => @order.city,
+				    :state => @order.state,
+				    :country => ('US' or @order.country),
+				    :zip => @order.zip,
+				    :email => @order.email}	
     }
     credit_card = ActiveMerchant::Billing::CreditCard.new(
     :first_name         => "DEFAULTT",
