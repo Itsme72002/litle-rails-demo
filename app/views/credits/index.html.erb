@@ -8,8 +8,7 @@
     <th>CardMonth</th>
     <th>CardYear</th>
     <th>Cvv</th>
-    <th>FirstName</th>
-    <th>LastName</th>
+    <th>Name</th>
     <th>Address1</th>
     <th>City</th>
     <th>State</th>
@@ -17,21 +16,17 @@
     <th>Zip</th>
     <th>Email</th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @credits.each do |credit| %>
   <tr>
-  
     <td><%= credit.amount %></td>
     <td><%= credit.litletxnid %></td>
     <td><%= credit.cardnumber %></td>
     <td><%= credit.cardmonth %></td>
     <td><%= credit.cardyear %></td>
     <td><%= credit.cvv %></td>
-    <td><%= credit.firstname %></td>
-    <td><%= credit.lastname %></td>
+    <td><%= credit.name %></td>
     <td><%= credit.address1 %></td>
     <td><%= credit.city %></td>
     <td><%= credit.state %></td>

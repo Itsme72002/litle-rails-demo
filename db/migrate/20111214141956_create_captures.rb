@@ -10,8 +10,7 @@ class CreateCaptures < ActiveRecord::Migration
       t.string :cardmonth
       t.string :cardyear
       t.string :cvv
-      t.string :firstname
-      t.string :lastname
+      t.string :name
       t.string :address1
       t.string :city
       t.string :state

@@ -36,14 +36,8 @@ class CreditsControllerTest < ActionController::TestCase
   end
   test "no amount" do
       get :show, id: @credit2.to_param
-      #assert_equal('Error validating xml data against the schema on line 9 Content of element "amount" is incomplete',assigns(:message))
       assert_template("credits/error","layouts/application") 
   end
-  #test "no amount" do
-   # get :show, id: @credit2.to_param
-    #assert_equal('Error validating xml data against the schema on line 9 Content of element "amount" is incomplete',assigns(:message))
-    #assert_template("credits/error","layouts/application")     
-  #end
   test "should get edit" do
     get :edit, id: @credit.to_param
     assert_response :success

@@ -2,8 +2,7 @@
 
 one:
   amount: 123
-  firstname: Bob
-  lastname: 123
+  name: Bob Smith
   cardnumber: 4242424242424242
   cardmonth: 12
   cardyear: 2013
@@ -11,8 +10,7 @@ one:
 
 two:
   amount: 123
-  firstname: Bob
-  lastname: 123
+  name: Bob
   cardnumber: 4242424224242
   cardmonth: 12
   cardyear: 2013
@@ -20,8 +18,7 @@ two:
 
 three:
   amount: 123
-  firstname: Bob
-  lastname: 123
+  name: Bob
   cardnumber: 4242424242424242
   cardmonth: 12
   cardyear: 2011
@@ -29,8 +26,7 @@ three:
   
 four:
   amount: 1111111111111
-  firstname: Bob
-  lastname: 123
+  name: Bob Smith
   cardnumber: 4242424242424242
   cardmonth: 12
   cardyear: 2013

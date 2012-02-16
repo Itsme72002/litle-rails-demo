@@ -1,8 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  litletxnid: 01010100101010101
-  amount: 234
+  litletxnid: 111111111111111360
+  amount: 1313
 
 two:
   litletxnid: 01010100101010101

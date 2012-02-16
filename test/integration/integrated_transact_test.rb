@@ -7,7 +7,7 @@ class IntegratedTransactTest < ActionDispatch::IntegrationTest
     # #authorization
     @order = orders(:one)
     get "orders/" + @order.to_param
-    assert_equal("Successfully authorized an amount of $1.23 to the credit card XXXX-XXXX-XXXX-4242",assigns(:post))
+    assert_equal("Successfully authorized an amount of $150.00 to the credit card XXXX-XXXX-XXXX-4242",assigns(:post))
     assert_template("orders/show","layouts/application")
     @authtxnid = assigns(:litletxnid)
     #capture
@@ -43,7 +43,7 @@ class IntegratedTransactTest < ActionDispatch::IntegrationTest
   test "just token" do
     @token = tokens(:one)
     get "tokens/" + @token.to_param
-    assert_equal("Successfully stored token with ID:",assigns(:post))
+    assert_equal("Successfully stored token:",assigns(:post))
     assert_template("tokens/show","layouts/application")
   end
   test "network" do

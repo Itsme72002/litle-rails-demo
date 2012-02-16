@@ -17,14 +17,12 @@ class TokensController < ApplicationController
     gateway = ActiveMerchant::Billing::LitleGateway.new
     
     credit_card = ActiveMerchant::Billing::CreditCard.new(
-    :first_name         => "DEFAULTT",
-    :last_name          => @token.name,
+    :name               => @token.name,
     :number             => @token.cardnumber,
     :month              => @token.cardmonth,
     :year               => @token.cardyear,
     :verification_value => @token.cvv)
     options = { 
-    #'orderSource' => 'ecommerce',
     'billToAddress' => {
             'name' => @token.name,
             'address1' => @token.address1,
@@ -34,12 +32,11 @@ class TokensController < ApplicationController
             'zip' => @token.zip,
             'email' => @token.email}  
     }
-    
     if credit_card.valid?
         response = gateway.store(credit_card,options)
  
       if response.success?
-        @post =  "Successfully stored token with ID:" 
+        @post =  "Successfully stored token:" 
         @tokenid = response.params['litleOnlineResponse'].registerTokenResponse.litleToken 
         
       else

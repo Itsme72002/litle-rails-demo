@@ -17,8 +17,6 @@
     <th>Created at</th>
     <th>Updated at</th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @tokens.each do |token| %>
@@ -37,9 +35,7 @@
     <td><%= token.cvv %></td>
     <td><%= token.created_at %></td>
     <td><%= token.updated_at %></td>
-    <td><%= link_to 'Show', token %></td>
     <td><%= link_to 'Edit', edit_token_path(token) %></td>
-    <td><%= link_to 'Destroy', token, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

@@ -21,9 +21,8 @@ class SalesController < ApplicationController
 
     options = { 
 		'orderSource' => 'ecommerce',
-		'billToAddress' => {'fisrtName' => @sale.firstname,
-			 	    'lastName' => @sale.lastname,
-				    'name' => [@sale.firstname, @sale.lastname].compact.join(','),
+		'billToAddress' => {
+			 	    'name' => @sale.name,
 				    'address1' => @sale.address1,
 				    'city' => @sale.city,
 				    'state' => @sale.state,
@@ -32,8 +31,7 @@ class SalesController < ApplicationController
 				    'email' => @sale.email}	
 		}
     credit_card = ActiveMerchant::Billing::CreditCard.new(
-                :first_name         => @sale.firstname,
-                :last_name          => @sale.lastname,
+                :name         => @sale.name,
                 :number             => @sale.cardnumber,
                 :month              => @sale.cardmonth,
                 :year               => @sale.cardyear,

@@ -22,7 +22,6 @@ class OrdersController < ApplicationController
     
     options = {
     
-		#'orderSource' => 'ecommerce',
 		:billing_address => {
 				    :name => @order.name,
 				    :address1 => @order.address1,
@@ -33,8 +32,7 @@ class OrdersController < ApplicationController
 				    :email => @order.email}	
     }
     credit_card = ActiveMerchant::Billing::CreditCard.new(
-    :first_name         => "DEFAULTT",
-    :last_name          => @order.name,
+    :name               => @order.name,
     :number             => @order.cardnumber,
     :month              => @order.cardmonth,
     :year               => @order.cardyear,

@@ -33,23 +33,17 @@ class TokensControllerTest < ActionController::TestCase
   end
   test "sucessful token" do
     get :show, id: @token.to_param   
-    assert_equal("Successfully stored token with ID:",assigns(:post))
+    assert_equal("Successfully stored token:",assigns(:post))
     assert_template("tokens/show","layouts/application")
   end
   test "invalid creditcard number" do
      get :show, id: @token2.to_param
      assert_template("tokens/error1","layouts/application")
-     #assert_redirected_to(render :action => 'error1')
   end
   test "invalid expdate" do
     get :show, id: @token3.to_param
     assert_template("tokens/error1","layouts/application")
   end
-  #test "unsucessful transaction invalid amount" do
-  #  get :show, id: @token4.to_param
-  #  assert_equal("Error validating xml data against the schema on line 9 the value has 13 digits, where precision must be within 12.",assigns(:message))
-  #  assert_template("tokens/error2","layouts/application")
-  #end
   test "should get edit" do
     get :edit, id: @token.to_param
     assert_response :success

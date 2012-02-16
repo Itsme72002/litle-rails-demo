@@ -1,8 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: 123
-  cardnumber: 4242424242424242
+  name: Bob Smith
+  cardnumber: 4050100000000801
   cardmonth: 12
   cardyear: 2013
   cvv: 123

@@ -17,16 +17,3 @@ In this Demo Rails (v3.1.1) App, The UI for this application allows realtime gen
  - Store (tokenization)
 
 All of the payment transactions above are accompanied by brief overview explaining there usage.  The explanations are located directly in the demo applications UI.
-
-NOTICE: To submit a Capture, Void, or Credit transaction you must reference the LitleTxnId from a prior transaction.
-
-In order to run the functional and integration test:
-
-Set the database to test mode
-
-rake db:test:prepare
-
-run the tests from inside the demo app file:
-
-ruby -Itest test/../..
-

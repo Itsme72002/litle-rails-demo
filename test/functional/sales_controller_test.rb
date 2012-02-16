@@ -47,7 +47,7 @@ class SalesControllerTest < ActionController::TestCase
    end
    test "unsucessful transaction invalid amount" do
       get :show, id: @sale4.to_param
-      assert_equal("Error validating xml data against the schema on line 9 the value has 13 digits, where precision must be within 12.",assigns(:message))
+      assert_match(/Error validating xml data against.*?/,assigns(:message))
       assert_template("sales/error2","layouts/application")
     end
   test "should get edit" do

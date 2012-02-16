@@ -13,23 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20120207190723) do
 
-  create_table "authreversals", :force => true do |t|
-    t.string   "merchantid"
-    t.string   "merchanttxnid"
-    t.string   "reportgroup"
-    t.string   "litletxnid"
-    t.string   "amount"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "books", :force => true do |t|
-    t.string   "bookname"
-    t.string   "author"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "captures", :force => true do |t|
     t.string   "merchantid"
     t.string   "merchanttxnid"
@@ -40,8 +23,7 @@ ActiveRecord::Schema.define(:version => 20120207190723) do
     t.string   "cardmonth"
     t.string   "cardyear"
     t.string   "cvv"
-    t.string   "firstname"
-    t.string   "lastname"
+    t.string   "name"
     t.string   "address1"
     t.string   "city"
     t.string   "state"
@@ -63,8 +45,7 @@ ActiveRecord::Schema.define(:version => 20120207190723) do
     t.string   "cardmonth"
     t.string   "cardyear"
     t.string   "cvv"
-    t.string   "firstname"
-    t.string   "lastname"
+    t.string   "name"
     t.string   "address1"
     t.string   "city"
     t.string   "state"
@@ -109,8 +90,7 @@ ActiveRecord::Schema.define(:version => 20120207190723) do
     t.string   "cardmonth"
     t.string   "cardyear"
     t.string   "cvv"
-    t.string   "firstname"
-    t.string   "lastname"
+    t.string   "name"
     t.string   "address1"
     t.string   "city"
     t.string   "state"

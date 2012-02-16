@@ -4,7 +4,6 @@ class CapturesControllerTest < ActionController::TestCase
   setup do
     @capture = captures(:one)
     @capture2 = captures(:two)
-   # @capture3= captures(:three)
   end
 
   test "should get index" do
@@ -36,13 +35,8 @@ class CapturesControllerTest < ActionController::TestCase
   end
   test "no amount" do
     get :show, id: @capture2.to_param
-    #assert_equal('Error validating xml data against the schema on line 9 Content of element "amount" is incomplete',assigns(:message))
     assert_template("captures/error","layouts/application") 
   end
- # test "to large litleTxnId" do 
- #   get :show, id: @capture3.to_param
- #   assert_equal(assigns(:message), 'Error validating xml data against the schema on line 8 "01010100101010101213213213" does not satisfy the "long" type')
- # end
 
   test "should get edit" do
     get :edit, id: @capture.to_param
