@@ -1,28 +1,32 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: Bob Smith
+  firstname: Bob
+  lastname: Smith
   cardnumber: 4050100000000801
   cardmonth: 12
   cardyear: 2013
   cvv: 123
 
 two:
-  name: 123
+  firstname: Bob
+  lastname: Smith
   cardnumber: 4242424224242
   cardmonth: 12
   cardyear: 2013
   cvv: 123
 
 three:
-  name: 123
+  firstname: Bob
+  lastname: Smith
   cardnumber: 4242424242424242
   cardmonth: 12
   cardyear: 2011
   cvv: 123
   
 four:
-  name: 123
+  firstname: Bob
+  lastname: Smith
   cardnumber: 4242424242424242
   cardmonth: 12
   cardyear: 2013
