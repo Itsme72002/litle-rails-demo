@@ -1,8 +1,7 @@
 class CreateTokens < ActiveRecord::Migration
   def change
     create_table :tokens do |t|
-      t.string :merchantid
-      t.string :merchanttxid
+
       t.string :name
       t.string :address1
       t.string :city
@@ -14,8 +13,6 @@ class CreateTokens < ActiveRecord::Migration
       t.string :cardmonth
       t.string :cardyear
       t.string :cvv
-      t.datetime :created_at
-      t.datetime :updated_at
 
       t.timestamps
     end

@@ -1,13 +1,10 @@
 class CreateOrders < ActiveRecord::Migration
   def change
     create_table :orders do |t|
-      t.string :merchantid
-      t.string :merchanttxnid
-      t.string :orderid
-      t.string :reportgroup
-      t.string :ordersource
+
       t.string :amount
-      t.string :name
+      t.string :firstname
+      t.string :lastname
       t.string :address1
       t.string :city
       t.string :state

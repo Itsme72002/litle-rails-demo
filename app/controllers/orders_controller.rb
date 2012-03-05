@@ -19,11 +19,10 @@ class OrdersController < ApplicationController
     
     amount =  @order.amount
     
-    
+   
     options = {
-    
 		:billing_address => {
-				    :name => @order.name,
+				    :name => @order.lastname,
 				    :address1 => @order.address1,
 				    :city => @order.city,
 				    :state => @order.state,
@@ -31,8 +30,11 @@ class OrdersController < ApplicationController
 				    :zip => @order.zip,
 				    :email => @order.email}	
     }
+    
+
     credit_card = ActiveMerchant::Billing::CreditCard.new(
-    :name               => @order.name,
+    :first_name               => @order.firstname,
+    :last_name               => @order.lastname,
     :number             => @order.cardnumber,
     :month              => @order.cardmonth,
     :year               => @order.cardyear,

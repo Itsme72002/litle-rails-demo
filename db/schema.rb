@@ -102,8 +102,6 @@ ActiveRecord::Schema.define(:version => 20120207190723) do
   end
 
   create_table "tokens", :force => true do |t|
-    t.string   "merchantid"
-    t.string   "merchanttxid"
     t.string   "name"
     t.string   "address1"
     t.string   "city"

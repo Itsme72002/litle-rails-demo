@@ -3,7 +3,8 @@
 <table>
   <tr>
     <th>Amount</th>
-    <th>Name</th>
+    <th>FirstName</th>
+    <th>LastName</th>
     <th>CardNumber</th>
     <th>CardMonth</th>
     <th>CardYear</th>
@@ -20,7 +21,8 @@
 <% @orders.each do |order| %>
   <tr>
     <td><%= order.amount %></td>
-    <td><%= order.name %></td>
+    <td><%= order.firstname %></td>
+    <td><%= order.lastname %></td>
     <td><%= order.cardnumber %></td>
     <td><%= order.cardmonth %></td>
     <td><%= order.cardyear %></td>
