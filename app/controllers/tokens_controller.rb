@@ -23,9 +23,10 @@ class TokensController < ApplicationController
     :month              => @token.cardmonth,
     :year               => @token.cardyear,
     :verification_value => @token.cvv)
+    
     options = { 
     :billToAddress => {
-            :name => @token.firstname,
+            :name => [@token.firstname, @token.lastname].compact.join(' '),
             :address1 => @token.address1,
             :city => @token.city,
             :state => @token.state,

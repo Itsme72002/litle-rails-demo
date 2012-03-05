@@ -21,7 +21,7 @@ class SalesController < ApplicationController
 
     options = { 
 		:billToAddress => {
-			 	    :name => @sale.lastname,
+			 	    :name => [@sale.firstname, @sale.lastname].compact.join(' '),
 				    :address1 => @sale.address1,
 				    :city => @sale.city,
 				    :state => @sale.state,

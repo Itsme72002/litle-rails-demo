@@ -22,7 +22,7 @@ class OrdersController < ApplicationController
    
     options = {
 		:billing_address => {
-				    :name => @order.lastname,
+				    :name => [@order.firstname, @order.lastname].compact.join(' '),
 				    :address1 => @order.address1,
 				    :city => @order.city,
 				    :state => @order.state,
