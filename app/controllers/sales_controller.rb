@@ -20,18 +20,18 @@ class SalesController < ApplicationController
   
 
     options = { 
-		'orderSource' => 'ecommerce',
-		'billToAddress' => {
-			 	    'name' => @sale.name,
-				    'address1' => @sale.address1,
-				    'city' => @sale.city,
-				    'state' => @sale.state,
-				    'country' => ('US' or @sale.country),
-				    'zip' => @sale.zip,
-				    'email' => @sale.email}	
+		:billToAddress => {
+			 	    :name => @sale.lastname,
+				    :address1 => @sale.address1,
+				    :city => @sale.city,
+				    :state => @sale.state,
+				    :country => ('US' or @sale.country),
+				    :zip => @sale.zip,
+				    :email => @sale.email}	
 		}
     credit_card = ActiveMerchant::Billing::CreditCard.new(
-                :name         => @sale.name,
+                :first_name               => @sale.firstname,
+                :last_name               => @sale.lastname,
                 :number             => @sale.cardnumber,
                 :month              => @sale.cardmonth,
                 :year               => @sale.cardyear,

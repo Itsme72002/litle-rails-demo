@@ -17,20 +17,21 @@ class TokensController < ApplicationController
     gateway = ActiveMerchant::Billing::LitleGateway.new
     
     credit_card = ActiveMerchant::Billing::CreditCard.new(
-    :name               => @token.name,
+    :first_name               => @token.firstname,
+    :last_name               => @token.lastname,
     :number             => @token.cardnumber,
     :month              => @token.cardmonth,
     :year               => @token.cardyear,
     :verification_value => @token.cvv)
     options = { 
-    'billToAddress' => {
-            'name' => @token.name,
-            'address1' => @token.address1,
-            'city' => @token.city,
-            'state' => @token.state,
-            'country' => ('US' or @token.country),
-            'zip' => @token.zip,
-            'email' => @token.email}  
+    :billToAddress => {
+            :name => @token.firstname,
+            :address1 => @token.address1,
+            :city => @token.city,
+            :state => @token.state,
+            :country => ('US' or @token.country),
+            :zip => @token.zip,
+            :email => @token.email}  
     }
     if credit_card.valid?
         response = gateway.store(credit_card,options)

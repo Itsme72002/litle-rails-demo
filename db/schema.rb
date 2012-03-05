@@ -14,56 +14,23 @@
 ActiveRecord::Schema.define(:version => 20120207190723) do
 
   create_table "captures", :force => true do |t|
-    t.string   "merchantid"
-    t.string   "merchanttxnid"
-    t.string   "orderid"
     t.string   "litletxnid"
     t.string   "amount"
-    t.string   "cardnumber"
-    t.string   "cardmonth"
-    t.string   "cardyear"
-    t.string   "cvv"
-    t.string   "name"
-    t.string   "address1"
-    t.string   "city"
-    t.string   "state"
-    t.string   "country"
-    t.string   "zip"
-    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "credits", :force => true do |t|
-    t.string   "merchantid"
-    t.string   "merchanttxnid"
-    t.string   "reportgroup"
-    t.string   "orderid"
     t.string   "litletxnid"
     t.string   "amount"
-    t.string   "cardnumber"
-    t.string   "cardmonth"
-    t.string   "cardyear"
-    t.string   "cvv"
-    t.string   "name"
-    t.string   "address1"
-    t.string   "city"
-    t.string   "state"
-    t.string   "country"
-    t.string   "zip"
-    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "orders", :force => true do |t|
-    t.string   "merchantid"
-    t.string   "merchanttxnid"
-    t.string   "orderid"
-    t.string   "reportgroup"
-    t.string   "ordersource"
     t.string   "amount"
-    t.string   "name"
+    t.string   "firstname"
+    t.string   "lastname"
     t.string   "address1"
     t.string   "city"
     t.string   "state"
@@ -79,18 +46,13 @@ ActiveRecord::Schema.define(:version => 20120207190723) do
   end
 
   create_table "sales", :force => true do |t|
-    t.string   "merchantid"
-    t.string   "merchanttxnid"
-    t.string   "reportgroup"
-    t.string   "orderid"
-    t.string   "ordersource"
-    t.string   "litletxnid"
     t.string   "amount"
     t.string   "cardnumber"
     t.string   "cardmonth"
     t.string   "cardyear"
     t.string   "cvv"
-    t.string   "name"
+    t.string   "firstname"
+    t.string   "lastname"
     t.string   "address1"
     t.string   "city"
     t.string   "state"
@@ -102,7 +64,8 @@ ActiveRecord::Schema.define(:version => 20120207190723) do
   end
 
   create_table "tokens", :force => true do |t|
-    t.string   "name"
+    t.string   "firstname"
+    t.string   "lastname"
     t.string   "address1"
     t.string   "city"
     t.string   "state"
@@ -118,9 +81,6 @@ ActiveRecord::Schema.define(:version => 20120207190723) do
   end
 
   create_table "voids", :force => true do |t|
-    t.string   "merchantid"
-    t.string   "merchanttxnid"
-    t.string   "reportgroup"
     t.string   "litletxnid"
     t.datetime "created_at"
     t.datetime "updated_at"
