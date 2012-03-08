@@ -23,9 +23,9 @@ Setup
 
 4) Start the rails application
 
-> rake db:create
-rake db:migrate
-rails s
+>rake db:migrate
+
+>rails s
 
 5) navigate to localhost:3000 inside a web browser to view the web application
 
