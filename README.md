@@ -23,6 +23,10 @@ Setup
 
 4) Start the rails application
 
+>cd litle-rails-demo
+
+>bundle install
+
 >rake db:migrate
 
 >rails s
