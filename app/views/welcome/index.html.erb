@@ -2,16 +2,12 @@
 <header>
   <h4>Here are examples using Litle Online payments:</h4>
 </header>
-<section>
 <h4>Authorization</h4>
 <p>The Authorization transaction enables you to confirm that a customer has submitted a valid payment method with their order and has sufficient funds to purchase the goods or services they ordered.</p>
 <%= link_to 'New Auth', new_order_path %>
-</section>
-<section>
 <h4>Capture</h4>
 <p>The Capture transaction transfers funds from the customer to the merchant. The Capture references the associated Authorization by means of the litleTxnId element returned in the Authorization response.</p>
 <%= link_to 'New Capture', new_capture_path %>
-</section>
 <h4>Credit/Refund</h4>
 <p>The Credit/Refund transaction enables you to refund money to a customer, even if the original transaction occurred outside of the Litle & Co. system.</p>
 <%= link_to 'New Credit', new_credit_path %>
@@ -24,3 +20,4 @@
 <h4>Store (Tokenization)</h4>
 <p>The register token request transaction allows a merchant to swap credit card data for a token that can be used while processing.</p>
 <%= link_to 'New Token', new_token_path %>
+<p>
